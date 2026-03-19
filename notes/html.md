@@ -14,10 +14,10 @@
 - name="author" content="Isaque Nogueira"
 <!-- cor da barra do navegador no mobile -->
 - name="theme-color" content="#000000"
-
-<meta property="og:title" content="Título do site">
-<meta property="og:description" content="Descrição">
-<meta property="og:image" content="imagem.png">
+<!-- Open graph - Redes socias -->
+- property="og:title" content="Título do site">
+- meta property="og:description" content="Descrição">
+- meta property="og:image" content="imagem.png">
 
 
 
