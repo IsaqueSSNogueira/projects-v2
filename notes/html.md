@@ -4,11 +4,13 @@
 # HEAD
 
 ## meta:
-<!-- codificação -->
+
+### codificação
 - charset="UTF-8"
-<!-- responsividade -->
+
+### responsividade
 - name="viewport" content="width=device-width, initial-scale=1.0"
-<!-- SEO -->
+### SEO
 - name="description" content="Isaque Nogueira"
 <!-- autor -->
 - name="author" content="Isaque Nogueira"
