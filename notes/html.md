@@ -3,7 +3,7 @@
 <!-- HEAD -->
 # HEAD
 
-## $`<meta>`:
+## `<meta>`:
 
 ### Codificação
 - charset="UTF-8"
@@ -25,5 +25,16 @@
 - meta property="og:description" content="Descrição">
 - meta property="og:image" content="imagem.png">
 
+### Robots (controle de indexação)
+- name="robots" content="index, follow" ✔
+- name="robots" content="noindex" ✔
+
 
 ## Link
+
+### Style
+- `<link rel="stylesheet" href="style/css">`
+
+
+### Icone da página
+- `<link rel=icon href="source/img.png">`
