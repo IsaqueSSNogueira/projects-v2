@@ -1,5 +1,7 @@
 ## 💡 Lamp
 
+/<img src="source/view1">
+
 This project is a reconstruction of one of my first experiences with JavaScript.
 
 It serves as a great starting point to revisit fundamental concepts and regain familiarity with the language. At this stage, the focus is on rebuilding older projects with improved quality and intention.
