@@ -1,6 +1,9 @@
 ## 💡 Lamp
 
-<img src="source/view1.png">
+<div style="width:100%" height:300px">
+  <img src="source/view1.png" height="100%">
+  <img src="source/view2.png" height="100%">
+</div>>
 
 This project is a reconstruction of one of my first experiences with JavaScript.
 
