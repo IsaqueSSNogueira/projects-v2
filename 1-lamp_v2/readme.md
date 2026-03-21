@@ -1,6 +1,6 @@
 ## 💡 Lamp
 
-/<img src="source/view1">
+<img src="source/view1.png">
 
 This project is a reconstruction of one of my first experiences with JavaScript.
 
