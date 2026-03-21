@@ -1,8 +1,8 @@
 ## 💡 Lamp
 
 <div style="width:100%">
-  <img src="source/view1.png" height="300px">
-  <img src="source/view2.png" height="300px">
+  <img src="source/view1.png" width="45%">
+  <img src="source/view2.png" width=="45%">
 </div>>
 
 This project is a reconstruction of one of my first experiences with JavaScript.
