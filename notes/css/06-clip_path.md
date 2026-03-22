@@ -1,0 +1,5 @@
+
+
+## Clip-path e truques para criar formas
+
+- `clip-path: polygon(10% 0, 90% 0, 100% 100%, 0 100%);`

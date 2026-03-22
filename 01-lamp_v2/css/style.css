@@ -68,8 +68,8 @@ body {
 /* light switch (checkbox) */
 
 #lightSwitch {
-	--webkit-appearance:none;
-	--webkit-tap-highlight-color:transparent;
+	-webkit-appearance:none;
+	-webkit-tap-highlight-color: transparent;
 	appearance: none;
 	height:25px;
 	width:5px;
@@ -114,12 +114,3 @@ body {
 	background-image: linear-gradient(rgba(41,135,228,0.5), rgba(41,135,228,0.1));
 	opacity: 1;
 }
-
-
-@media only screen and(min-width: 600px){}
-
-@media only screen and(min-width: 768px){}
-
-@media only screen and(min-width: 992px){}
-
-@media only screen and(min-width: 1200px){}
