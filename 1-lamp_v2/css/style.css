@@ -102,6 +102,8 @@ body {
 	index:-5px;
 	clip-path: polygon(10% 0, 90% 0, 100% 100%, 0 100%);
 	pointer-events: none;
+	opacity: 0;
+	transition: opacity 0.4s ease;
 }
 
 #lightSwitch:checked {
@@ -110,6 +112,7 @@ body {
 
 #lightSwitch:checked:before {
 	background-image: linear-gradient(rgba(41,135,228,0.5), rgba(41,135,228,0.1));
+	opacity: 1;
 }
 
 

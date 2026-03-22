@@ -33,7 +33,7 @@ ul, ol {
 - fixed → fixo na tela, ideal para botôes flutuantes e cabeçalhios fixos
 - sticky → gruda quando chega no limite, ideal para cabeçalhos que fixam ao rolar
 
-### centralizar com position absolute
+### Centralizar com position absolute
 <!-- centralizar -->
 - `left: 0; right: 0; margin: auto; width:Xpx;` → centraliza horizontalmente (precisa de width)
 <!-- melhor forma -->
@@ -54,7 +54,7 @@ ul, ol {
 - Interessante para usar em pseudo-elementos.
 
 ## --webkit
-- Seria alguns padrões dos navegadores, geralmente é acessado para remover os prefixos e buscar manter igualidade da aplicação onde for rodar;
+- Com base em alguns padrões dos navegadores, geralmente é acessado para remover os prefixos e buscar manter igualidade da aplicação onde for rodar;
 ```
 /*inputs, usados como em checkbox*/
 # {
@@ -76,7 +76,7 @@ ul, ol {
 - :-webkit-autofill → estilizar autofill
 
 ```
-## Clip-path
+## Clip-path e truques para criar formas
 
 - `clip-path: polygon(10% 0, 90% 0, 100% 100%, 0 100%);`
 
