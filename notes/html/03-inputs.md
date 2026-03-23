@@ -1,4 +1,0 @@
-
-<!-- inputs -->
-
-- `<input type="checkbox">`

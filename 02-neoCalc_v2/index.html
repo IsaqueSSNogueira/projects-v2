@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+	
+<head>
+	<meta charset="UTF-8">
+	<title>NeoCalc</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Isaque Nogueira">
+	<meta name="description" content="">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="icon" href="source/icon.png">
+	<script src="js/script.js" defer></script>
+</head>
+
+<body>
+
+ <!-- container principal -->
+ <div id="baseContainer">
+	<!-- neoCalc -->
+	<main id="mainContainer">
+		<form id="neoCalc">
+		 <!-- header -->
+		 <header id="header">
+		
+			<!-- title -->
+			<div id="headerTop">
+			  <h1 id="title">NeoCalc</h1>
+			  <div id="containerSpecialButtons">
+			  	<button class="button mathButtons special">F</button>
+		 	  	<button class="button mathButtons special">D</button>
+		 	   </div>
+			</div>
+			
+			<!-- display -->
+			<div id="displayContainer">
+			 	<input type="text" id="displayInput" readonly value="19">
+			</div>
+		  </header>
+
+
+		  <!-- button collections -->
+		 <div id="containerButtons">
+		 	<div class="lineButton">
+				<button class="button" type="button" data-number="7">7</button>
+				<button class="button" type="button" data-number="8">8</button>
+				<button class="button" type="button" data-number="9">9</button>
+				<button class="button mathButtons" type="button" data-action="+">+</button>
+			</div>
+		 	<div class="lineButton">
+				<button class="button" type="button" data-number="4">4</button>
+				<button class="button" type="button" data-number="5">5</button>
+				<button class="button" type="button" data-number="6">6</button>
+				<button class="button mathButtons" type="button" data-action="-">-</button>
+			</div>
+		 	<div class="lineButton">
+				<button class="button" type="button" data-number="1">1</button>
+				<button class="button" type="button" data-number="2">2</button>
+				<button class="button" type="button" data-number="3">3</button>
+				<button class="button mathButtons" type="button" data-action="X">X</button>
+			</div>
+		 	<div class="lineButton">
+				<button class="button" id="clearButton" type="button" data-action="C">C</button>
+				<button class="button" type="button" data-number="0">0</button>
+				<button class="button mathButtons" id="calcButton" type="button" data-action="=">=</button>
+				<button class="button mathButtons" type="button" data-action="/">/</button>
+			</div>
+		 </div>	
+		</form>
+	</main>
+
+ </div>
+	
+</body>
+
+</html>
