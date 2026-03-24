@@ -26,4 +26,3 @@
  - ```
  	const element = document.querySelector("") // escolha com base no seletor (tag, #, .)
  	const element = docuemnt.querySelectorAll("") // bom para interações
-```
