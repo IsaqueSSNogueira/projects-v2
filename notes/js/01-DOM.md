@@ -21,11 +21,9 @@
 	const elemento = document.getElementsByTagName("")
    ```
 
--### Padrão moderno (querySelector): 
+### Padrão moderno (querySelector): 
 - Aceita qualquer seletor css e é mais consistente. Uma das vantagens é de não se atualizar sozinho e poder ser aplicado forEach, já que se trata de uma NodeList:
  - ```
  	const element = document.querySelector("") // escolha com base no seletor (tag, #, .)
  	const element = docuemnt.querySelectorAll("") // bom para interações
-
- ```
-
+```
