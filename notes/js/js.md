@@ -1,5 +1,10 @@
 
-<!-- captar Seletores --> 
-<!-- carregar arquivo externo -->
-<!-- funções -->
+<!-- variavies -->
+<!-- operadores -->
 <!--  eventos -->
+<!-- funções -->
+<!-- condicionais -->
+<!-- methods from elements DOM -->
+<!-- dataset -->
+<!-- carregar arquivo externo -->
+<!-- methods -->

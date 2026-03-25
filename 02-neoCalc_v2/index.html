@@ -27,14 +27,14 @@
 			<div id="headerTop">
 			  <h1 id="title">NeoCalc</h1>
 			  <div id="containerSpecialButtons">
-			  	<button class="button mathButtons special" type="button">F</button>
-		 	  	<button class="button mathButtons special" type="button">D</button>
+			  	<button class="special" type="button">F</button>
+		 	  	<button class="special" type="button">D</button>
 		 	   </div>
 			</div>
 			
 			<!-- display -->
 			<div id="displayContainer">
-			 	<input type="text" id="displayInput" readonly value="19">
+			 	<input type="text" id="displayInput" readonly value="">
 			</div>
 		  </header>
 
@@ -42,28 +42,28 @@
 		  <!-- button collections -->
 		 <div id="containerButtons">
 		 	<div class="lineButton">
-				<button class="button" type="button" data-number="7">7</button>
-				<button class="button" type="button" data-number="8">8</button>
-				<button class="button" type="button" data-number="9">9</button>
-				<button class="button mathButtons" type="button" data-action="+">+</button>
+				<button class="button" type="button" data-value="7">7</button>
+				<button class="button" type="button" data-value="8">8</button>
+				<button class="button" type="button" data-value="9">9</button>
+				<button class="button mathButtons" type="button" data-value="+">+</button>
 			</div>
 		 	<div class="lineButton">
-				<button class="button" type="button" data-number="4">4</button>
-				<button class="button" type="button" data-number="5">5</button>
-				<button class="button" type="button" data-number="6">6</button>
-				<button class="button mathButtons" type="button" data-action="-">-</button>
+				<button class="button" type="button" data-value="4">4</button>
+				<button class="button" type="button" data-value="5">5</button>
+				<button class="button" type="button" data-value="6">6</button>
+				<button class="button mathButtons" type="button" data-value="-">-</button>
 			</div>
 		 	<div class="lineButton">
-				<button class="button" type="button" data-number="1">1</button>
-				<button class="button" type="button" data-number="2">2</button>
-				<button class="button" type="button" data-number="3">3</button>
-				<button class="button mathButtons" type="button" data-action="X">X</button>
+				<button class="button" type="button" data-value="1">1</button>
+				<button class="button" type="button" data-value="2">2</button>
+				<button class="button" type="button" data-value="3">3</button>
+				<button class="button mathButtons" type="button" data-value="*">X</button>
 			</div>
 		 	<div class="lineButton">
-				<button class="button" id="clearButton" type="button" data-action="C">C</button>
-				<button class="button" type="button" data-number="0">0</button>
-				<button class="button mathButtons" id="calcButton" type="button" data-action="=">=</button>
-				<button class="button mathButtons" type="button" data-action="/">/</button>
+				<button class="button" id="clearButton" type="button" data-value="c">C</button>
+				<button class="button" type="button" data-value="0">0</button>
+				<button class="button mathButtons" id="calcButton" type="button" data-value="=">=</button>
+				<button class="button mathButtons" type="button" data-value="/">/</button>
 			</div>
 		 </div>	
 		</form>
