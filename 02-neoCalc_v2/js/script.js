@@ -10,7 +10,7 @@ numberButton.forEach((item) => {
 
 	const value = item.dataset.value;
 
-	if(value !== "=" && value !== "c"){
+	if(value !== "=" && value !== "c" && value !== "<" && value !== "d"){
 		item.addEventListener("click", () => {
 			expressionButtonClick(value)
 		})
@@ -26,7 +26,7 @@ numberButton.forEach((item) => {
 		})
 	}
 	else {
-		displayInput.value = "ERROR"
+		displayInput.value = ""
 	}
 })
 

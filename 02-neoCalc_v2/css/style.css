@@ -164,15 +164,7 @@ body {
 
 #calcButton {
   width: 130px;
-  margin: 2px 2px 6px 2px;
-  color: #FFF;
-  text-shadow: -1px -1px 0px #5a3b00;
-  background: linear-gradient(to bottom, #ffd700, #daa520);
-  border-top: 2px solid #fff4b3;
-  border-right: 2px solid #e6c200;
-  border-bottom: 2px solid #7a5a00;
-  border-left: 2px solid #7a5a00;
-  box-shadow: 0px 0px 4px rgba(0,0,0,0.6), inset 0px -15px 10px rgba(122,90,0,0.6), inset 0px 2px 5px rgba(255,255,255,0.4);
+  
 }
 
 
