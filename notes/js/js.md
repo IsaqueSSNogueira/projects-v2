@@ -1,8 +1,7 @@
 
-<!-- variavies -->
-<!-- operadores -->
-<!--  eventos -->
 <!-- funções -->
+<!--  eventos -->
+<!-- operadores -->
 <!-- condicionais -->
 <!-- methods from elements DOM -->
 <!-- dataset -->
