@@ -5,6 +5,9 @@ const displayInput = document.querySelector("#displayInput")
 const numberButton = document.querySelectorAll(".button")
 
 let expression = "";
+let isResult = false;
+const operators = ["+", "*", "/", ".", "-"];
+
 
 numberButton.forEach((item) => {
 
@@ -20,6 +23,11 @@ numberButton.forEach((item) => {
 			calc()
 		})
 	}
+	else if(value === "<"){
+		item.addEventListener("click", () => {
+			eraseInput()
+		})
+	}
 	else if(value === "c"){
 		item.addEventListener("click", () => {
 			clearInput()
@@ -31,19 +39,54 @@ numberButton.forEach((item) => {
 })
 
 function expressionButtonClick(value) {
-	expression = expression + value
+	const isOperator = operators.includes(value);
+	const lastChar = expression.at(-1);
+
+	// Se não tem nada e clicou operador → ignora
+	if(!expression && isOperator && value !== "-") {
+		return;
+	}
+
+	// Se clicou operador e o antecessor é operador
+	if (isOperator && operators.includes(lastChar)) {
+		expression = expression.slice(0, -1) + value;
+	}
+	else if(isResult && !operators.includes(value)) {
+		expression = ""
+		expression += value
+	}
+	else {
+		expression += value
+	}
+
 	displayInput.value = expression;
+	isResult = false;
 }
 
 function calc() {
-	const result = eval(expression)
-	if(result){
-		displayInput.value = result
+	/*se houver algo de errado*/
+	if(!expression) return
+
+	try {
+		let resultNumber = eval(expression);
+		let result = resultNumber.toString();
+
+		expression = result;
+		displayInput.value = expression;
+		isResult = true;
+
+	} catch {
+		expression = "";
+		displayInput.value = "";
 	}
-	else {
-		displayInput.value = ""
+}
+
+function eraseInput() {
+	if(expression){
+		const expressionErase = expression.slice(0, -1)
+		expression = expressionErase;
+		displayInput.value = expression;
 	}
-	expression = ""
 }
 
 function clearInput() {
