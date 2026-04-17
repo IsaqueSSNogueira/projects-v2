@@ -6,6 +6,8 @@ interessante a lógica de apagar o ultimo e ja integrar outro operador
 	if (isOperator && operators.includes(lastChar)) {
 		expression = expression.slice(0, -1) + value;
 	}
+
+	// utilizar objeto para itens e fazer o canvas se basear por ele
 ```
 
 
