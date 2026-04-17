@@ -1,0 +1,5 @@
+
+## setTimeOut
+
+
+## setInterval

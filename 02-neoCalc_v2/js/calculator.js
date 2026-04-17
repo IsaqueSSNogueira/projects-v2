@@ -1,8 +1,11 @@
 
 
+
 // DOM
 const displayInput = document.querySelector("#displayInput")
+const displayCanvas = document.querySelector("#canvas")
 const numberButton = document.querySelectorAll(".button")
+
 
 let expression = "";
 let isResult = false;
@@ -31,6 +34,11 @@ numberButton.forEach((item) => {
 	else if(value === "c"){
 		item.addEventListener("click", () => {
 			clearInput()
+		})
+	}
+	else if(value === "d"){
+		item.addEventListener("click", () => {
+			toggleMode()
 		})
 	}
 	else {
@@ -93,3 +101,20 @@ function clearInput() {
 	expression = ""
 	displayInput.value = expression
 }
+
+
+// modo
+let mode = ""
+function toggleMode() {
+	mode = mode === "dino" ? "calc" : "dino";
+	if(mode === "dino"){
+		displayInput.classList.add("hidden")
+		displayCanvas.classList.remove("hidden")
+	}
+	else{
+		displayInput.classList.remove("hidden")
+		displayCanvas.classList.add("hidden")
+	}
+	expression = ""
+	displayInput.value = ""
+} 

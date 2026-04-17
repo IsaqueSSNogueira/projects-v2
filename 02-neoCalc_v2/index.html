@@ -10,7 +10,8 @@
 	<meta name="description" content="">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="icon" href="source/icon.png">
-	<script src="js/script.js" defer></script>
+	<script src="js/calculator.js" defer></script>
+	<script src="js/dino.js" defer></script>
 </head>
 
 <body>
@@ -35,6 +36,7 @@
 			<!-- display -->
 			<div id="displayContainer">
 			 	<input type="text" id="displayInput" readonly value="">
+			 	<canvas id="canvas" class="hidden"></canvas>
 			</div>
 		  </header>
 
@@ -62,7 +64,7 @@
 				<button class="button" type="button" data-value="4">4</button>
 				<button class="button" type="button" data-value="5">5</button>
 				<button class="button" type="button" data-value="6">6</button>
-				<button class="button mathButtons" type="button" data-value="*">X</button>
+				<button class="button mathButtons" type="button" data-value="*">x</button>
 			</div>
 		 	<!-- line 4 -->
 		 	<div class="lineButton">
