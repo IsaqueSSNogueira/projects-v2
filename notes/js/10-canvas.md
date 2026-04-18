@@ -132,3 +132,69 @@ requestAnimationFrame(loop)
 ``` 
 
 
+
+_//_
+
+## requestAnimationFrame()
+
+- Loop para fazer repetir algo;
+- Substitue o setInterval, funcionando como uma espécie de callback que atualiza de maneira mais suave, mais eficiente e sendo o padrão dos jogos web;
+- Exemplo:
+```
+function loop() {
+  console.log("rodando");
+
+  requestAnimationFrame(loop);
+}
+
+loop();
+```
+
+- Estrutura de um jogo:
+``` 
+// variável de controle
+let running = true;
+
+function gameLoop() {
+
+  // condição
+  if (!running) return;
+
+  // limpar
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+  // atualizar lógica
+  dino.x += 2;
+
+  // desenhar
+  ctx.fillRect(dino.x, dino.y, dino.w, dino.h);
+
+  // próximo frame
+  requestAnimationFrame(gameLoop);
+}
+
+gameLoop();
+```
+- Mais profissional:
+```
+let running = true;
+let animationId;
+
+function gameLoop() {
+  if (!running) return;
+
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+  animationId = requestAnimationFrame(gameLoop);
+}
+
+/*parar*/
+running = false;
+cancelAnimationFrame(animationId);
+
+
+```
+
+
+
+_//_
