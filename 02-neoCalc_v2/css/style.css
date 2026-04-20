@@ -199,21 +199,21 @@ body {
 
 
 /*responsivo*/
-
+/* 
 @media only screen and (max-width: 600px){
 
-  /* neocalc */
+  /* neocalc 
   #mainContainer {
     width: 340px;
   }
 
-  /* display  
+  /* display   
   #displayContainer {
     height: 80px;
   }
   
 
-  /* button  */
+  /* button 
   .button {
     margin: 4px;
     width: 65px;
@@ -230,8 +230,7 @@ body {
   }
 
 }
-
-
+*/
 
 /* js */
 /* canvas */
