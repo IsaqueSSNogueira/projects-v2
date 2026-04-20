@@ -110,6 +110,8 @@ function toggleMode() {
 	if(mode === "dino"){
 		displayInput.classList.add("hidden")
 		displayCanvas.classList.remove("hidden")
+		startGame()
+
 	}
 	else{
 		displayInput.classList.remove("hidden")
