@@ -76,7 +76,9 @@ ctx.fillStyle = "green";
 ctx.fillRect(100, 100, 20, 40);
 
 /*desenhar texto*/
-ctx.fillText("Score: 10", 10, 20);
+ctx.fillStyle = "black";
+ctx.font = "16px Arial";
+ctx.fillText("texto", x, y);
 ```
 
 

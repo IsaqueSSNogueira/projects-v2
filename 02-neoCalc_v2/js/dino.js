@@ -21,7 +21,7 @@ let initialScreenId;
 
 // vars
 let loading = 0
-let maxScore = 0
+let maxScore = 1
 let isReady;
 let isGameOver;
 
@@ -134,6 +134,10 @@ function gameLoop() {
 	ctx.font = "8px Arial";
 	ctx.fillText(Math.floor(score), 250, 15);
 	score += 0.5
+	// max score
+	if(maxScore > 0){
+		ctx.fillText(`H1 ${Math.floor(maxScore)}`, 200, 15)
+	}
 
 	// colisão
 	if (dino.x < cactus.x + cactus.w && 
