@@ -61,8 +61,8 @@ let isGameOver;
 function resetGame(){
 		dino = {w: 20, h: 20, x: 30, y: 30, background: dinoSprite, backgroundLoser: "", velocityY: 0, gravity: 0.2, isJumping: false}
 		cactus = {w: 12, h: 22, x: 450, y: 40, background: cactusSprite, backgroundLoser: ""}
-  	clound1 = {w:25, h:15, x:100, y:15, background: cloundSprite}
-  	clound2 = {w:25, h:15, x:300, y:30, background: cloundSprite}
+  	clound1 = {w:25, h:15, x:100, y:7, background: cloundSprite}
+  	clound2 = {w:25, h:15, x:300, y:22, background: cloundSprite}
   	score = 0
   	loading = 0
 		isReady = false;
@@ -100,6 +100,7 @@ function initialScreen(){
 		}
 		else{
 			cancelAnimationFrame(initialScreenId)
+			loadingSound.pause()
 			// screen
 			ctx.font = "8px Arial"
 			ctx.fillText("Play ", 130, 35)
@@ -107,7 +108,6 @@ function initialScreen(){
 			isReady = true
 
 			// initial sound
-			loadingSound.pause()
 			readyPlaySound.currentTime = 0
 			readyPlaySound.play()
 		}
