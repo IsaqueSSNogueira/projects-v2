@@ -51,7 +51,7 @@ let initialScreenId;
 
 // vars
 let loading = 0
-let maxScore = 1
+let maxScore = 0
 let isReady;
 let isPlaying;
 let isGameOver;
