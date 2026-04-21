@@ -157,7 +157,7 @@ function gameOver() {
 	// state
 	setTimeout(() => {
 		isGameOver = true;
-	}, 200)
+	}, 500)
 }
 
 
