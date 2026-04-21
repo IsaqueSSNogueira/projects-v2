@@ -10,6 +10,11 @@ interessante a lógica de apagar o ultimo e ja integrar outro operador
 	// utilizar objeto para itens e fazer o canvas se basear por ele
 ```
 
+```
+colisao
+```
+
+
 
 ```
 inspirações:

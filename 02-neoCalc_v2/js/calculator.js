@@ -55,8 +55,12 @@ function expressionButtonClick(value) {
 		return;
 	}
 
+	// bloqueia bugs visuais 
+	if(expression.length <= 1 && lastChar === "-" && isOperator){
+		return
+	}
 	// Se clicou operador e o antecessor é operador
-	if (isOperator && operators.includes(lastChar)) {
+	else if (isOperator && operators.includes(lastChar)) {
 		expression = expression.slice(0, -1) + value;
 	}
 	else if(isResult && !operators.includes(value)) {
@@ -84,8 +88,7 @@ function calc() {
 		isResult = true;
 
 	} catch {
-		expression = "";
-		displayInput.value = "";
+		return;
 	}
 }
 
@@ -116,7 +119,11 @@ function toggleMode() {
 	else{
 		displayInput.classList.remove("hidden")
 		displayCanvas.classList.add("hidden")
+		loadingSound.pause()
+		musicGameLoop.pause()
 	}
+	// reset 
+	resetGame()
 	expression = ""
 	displayInput.value = ""
 } 

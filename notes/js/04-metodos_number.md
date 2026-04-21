@@ -1,7 +1,7 @@
 
 ## Arredondar
 
-- 🔽Math.floor() -> arredonda a parte decimal, indo sempre para baixo. Exemplo: 
+- 🔽 Math.floor() -> arredonda a parte decimal, indo sempre para baixo. Exemplo: 
 ```
 Math.floor(4.1) -> 4 // arredonda para baixo
 Math.floor(-4.1) -> -5 // arredonda para baixo ficando negativo
