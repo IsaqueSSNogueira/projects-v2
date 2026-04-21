@@ -119,6 +119,7 @@ function toggleMode() {
 	else{
 		displayInput.classList.remove("hidden")
 		displayCanvas.classList.add("hidden")
+		readyPlaySound.pause()
 		loadingSound.pause()
 		musicGameLoop.pause()
 	}
