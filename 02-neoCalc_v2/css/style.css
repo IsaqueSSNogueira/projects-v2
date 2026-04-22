@@ -27,7 +27,7 @@ body {
 	color:#fff;
 	width:100vw;
 	height: 100vh;
-	background-color: #424242;
+	background-color: #171a1e;
   font-family: Tahoma;
   display: flex;
 	justify-content: center;
@@ -45,18 +45,19 @@ body {
 /* neocalc */
 #mainContainer {
   width: 300px;
-  padding: 8px 8px 15px 8px;
-  background-color: #ABABAB;
-  border-radius: 4px;
-  border-top: 2px solid #FFF;
-  border-right: 2px solid #FFF;
-  border-bottom: 2px solid #C1C1C1;
-  border-left: 2px solid #C1C1C1;
-  box-shadow: -3px 3px 7px rgba(0, 0, 0, 0.6), inset -100px 0px 100px rgba(255, 255, 255, 0.5);
+  padding: 15px 8px 15px 8px;
+  background: linear-gradient(45deg, #1c1f24, #1c1f24, #585e63);
+  border-top: 1.5px solid rgba(255,255,255,0.6);
+  border-right: 1.5px solid rgba(255,255,255,0.4);
+  border-left: 1px solid rgba(255,255,255,0.2);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  outline: 1px solid #16181c;
+  box-shadow: 0 0 3px black;
+  border-radius: 15px;
   position: absolute;
   top:50%;
   left:50%;
-  transform: translate(-50%, -50%)
+  transform: translate(-50%, -50%);
 }
 
 /* header */
@@ -80,25 +81,23 @@ body {
 
 #title {
 	font-size: 1rem;
+
 }
 
 /* display */ 
 #displayContainer {
   display: block;
+  width:93%;
   margin: 15px auto;
-  height: 60px;
-  border-radius: 4px;
-  border-top: 2px solid #C1C1C1;
-  border-right: 2px solid #C1C1C1;
-  border-bottom: 2px solid #FFF;
-  border-left: 2px solid #FFF;
-  background-color: #FFF;
-  box-shadow: inset 0px 0px 10px #030303, inset 0px -20px 1px rgba(150, 150, 150, 0.2);
+  height: 70px;
+  border-radius: 7px;
+  background-color: #b1c1ba;
   color: #666;
   text-align: right;
   font-weight: 400;
   opacity: 0.8;
   position: relative;
+  box-shadow:inset 0px 0px 12px #030303, inset 0px -15px 1px rgba(150, 150, 150, 0.4), inset 2px 3px 2px black, inset -3px -3px 2px black;
 }
 
 #displayInput {
@@ -124,6 +123,8 @@ body {
 /* button  */
 
 .lineButton {
+  width: 100%;
+  padding: 0 5px;
 	display: flex;
 	justify-content: space-around;
 }
@@ -131,40 +132,41 @@ body {
 .button {
   display: inline-block;
   margin: 2px;
-  width: 60px;
-  height: 45px;
-  font-size: 16px;
+  width: 58px;
+  height: 43px;
+  font-size: 18px;
   font-weight: bold;
   border-radius: 4px;
   opacity:0.9;  
   transition: 0.2s;
+  background: linear-gradient(to top, #313439, #3f4247);
+  border:none;
+  outline: 1px solid black;
+  border-top: 1.5px solid rgba(255,255,255,0.5);
+  border-right: 1px solid rgba(255,255,255,0.4);
+  box-shadow: rgba(0,0,0,1) -2px 2px 3px;
+  color:rgba(255,255,255,0.9);
 }
 
 .button:active {
 	transform: scale(0.96);
 }
 
+#dinoIcon {
+  margin-top:3px;
+}
+
 .mathButtons {
   margin: 2px 2px 6px 2px;
-  color: #FFF;
-  text-shadow: -1px -1px 0px #44006F;
-  background-color: #434343;
-  border-top: 2px solid #C1C1C1;
-  border-right: 2px solid #C1C1C1;
-  border-bottom: 2px solid #181818;
-  border-left: 2px solid #181818;
-  box-shadow: 0px 0px 2px #030303, inset 0px -20px 1px #2E2E2E;
+  color: #a968ed;
+  background: linear-gradient(45deg, #16181c, #24272e);
 }
 
 #clearButton {
   color: #FFF;
-  text-shadow: -1px -1px 0px #44006F;
-  background-color: #D20000;
-  border-top: 2px solid #FF8484;
-  border-right: 2px solid #FF8484;
-  border-bottom: 2px solid #800000;
-  border-left: 2px solid #800000;
-  box-shadow: 0px 0px 2px #030303, inset 0px -20px 1px #B00000;
+  background: none;
+  background: #a11b21;
+  box-shadow: inset 0 0 15px rgba(0,0,0,0.2);
 }
 
 #calcButton {
@@ -177,20 +179,7 @@ body {
 .special {
 	width: 20px;
 	height: 20px;
-	opacity: 0.9;
-  font-size: 16px;
-  font-weight: bold;
-  border-radius: 4px;
-  opacity:0.9;  
-  transition: 0.2s;
-  margin: 2px 2px 6px 2px;
-  color: #FFF;
-  text-shadow: -1px -1px 0px #44006F;
-  border-top: 2px solid #C1C1C1;
-  border-right: 2px solid #C1C1C1;
-  border-bottom: 2px solid #181818;
-  border-left: 2px solid #181818;
-  box-shadow: 0px 0px 2px #030303, inset 0px -20px 1px #2E2E2E;
+  font-size: 14px;
 }
 
 .special:active {
@@ -235,11 +224,11 @@ body {
 /* js */
 /* canvas */
 #canvas {
-  width: 100%;
+  width: 96%;
   height: 100%;
   position: absolute;
   top:0;
-  left: 0;
+  left: 2%;
 }
 
 

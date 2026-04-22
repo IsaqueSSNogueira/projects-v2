@@ -59,10 +59,10 @@ let isGameOver;
 
 
 function resetGame(){
-		dino = {w: 20, h: 20, x: 30, y: 30, background: dinoSprite, backgroundLoser: "", velocityY: 0, gravity: 0.2, isJumping: false}
+		dino = {w: 20, h: 20, x: 30, y: 38, background: dinoSprite, backgroundLoser: "", velocityY: 0, gravity: 0.2, isJumping: false}
 		cactus = {w: 12, h: 22, x: 450, y: 40, background: cactusSprite, backgroundLoser: ""}
-  	clound1 = {w:25, h:15, x:100, y:7, background: cloundSprite}
-  	clound2 = {w:25, h:15, x:300, y:22, background: cloundSprite}
+  	clound1 = {w:28, h:18, x:100, y:7, background: cloundSprite}
+  	clound2 = {w:28, h:18, x:300, y:22, background: cloundSprite}
   	score = 0
   	loading = 0
 		isReady = false;
@@ -96,15 +96,15 @@ function initialScreen(){
 			loading += 0.25
 			initialScreenId = requestAnimationFrame(initialScreen)
 			ctx.fillStyle = "gray"
-			ctx.fillRect(115, 30, loading, 1)
+			ctx.fillRect(106, 30, loading, 1)
 		}
 		else{
 			cancelAnimationFrame(initialScreenId)
 			loadingSound.pause()
 			// screen
 			ctx.font = "8px Arial"
-			ctx.fillText("Play ", 130, 35)
-			ctx.drawImage(playSprite, 148, 30, 5, 5)
+			ctx.fillText("Play ", 120, 35)
+			ctx.drawImage(playSprite, 138, 30, 5, 5)
 			isReady = true
 
 			// initial sound
@@ -114,7 +114,7 @@ function initialScreen(){
 
 		ctx.font = "10px Arial"
 		ctx.fillStyle = "black"
-		ctx.fillText("Start game", 115, 20)
+		ctx.fillText("Start game", 105, 20)
 }
 
 
@@ -133,24 +133,24 @@ function gameOver() {
 	// score
 	ctx.fillStyle = "black";
 	ctx.font = "8px Arial";
-	ctx.fillText(Math.floor(score), 250, 15);
+	ctx.fillText(Math.floor(score), 240, 15);
 	score += 0.5
 
 	// max score
 	maxScore = maxScore < score ? score : maxScore
 	if(maxScore > 0){
-		ctx.fillStyle = "gray"
-		ctx.fillText(`H1 ${Math.floor(maxScore)}`, 210, 15)
+		ctx.fillStyle = "#5e5e5e"
+		ctx.fillText(`H1 ${Math.floor(maxScore)}`, 200, 15)
 	}
 	
 	// game over text
 	ctx.fillStyle = "black"
 	ctx.font = "10px Arial"
-	ctx.fillText("Fim de jogo", 110, 20)
+	ctx.fillText("Fim de jogo", 105, 20)
 	ctx.fillStyle = "black"
 	ctx.font = "8px Arial"
-	ctx.fillText("Jogar denovo", 110, 35)
-	ctx.drawImage(playSprite, 162, 30, 5, 5)
+	ctx.fillText("Jogar denovo", 103, 35)
+	ctx.drawImage(playSprite, 155, 30, 5, 5)
 	// sound
 	deathSound.currentTime = 0.2; // cut delay
 	deathSound.play()
@@ -192,13 +192,13 @@ function gameLoop() {
 	// score
 	ctx.fillStyle = "black";
 	ctx.font = "8px Arial";
-	ctx.fillText(Math.floor(score), 250, 15);
+	ctx.fillText(Math.floor(score), 240, 15);
 	score += 0.5
 
 	// max score
 	if(maxScore > 0){
-		ctx.fillStyle = "gray"
-		ctx.fillText(`H1 ${Math.floor(maxScore)}`, 210, 15)
+		ctx.fillStyle = "#5e5e5e"
+		ctx.fillText(`H1 ${Math.floor(maxScore)}`, 200, 15)
 	}
 
 
@@ -219,7 +219,7 @@ function gameLoop() {
 	dino.velocityY += dino.gravity; // 0 + 0.4 = 0.4
 
 	// chão impede de cair
-	const ground = 35;
+	const ground = 39;
 	if (dino.y >= ground) {
 	  dino.y = ground; // não ultrapassa o chão
 	  dino.velocityY = 0; // zera, se deixar ele vai forçar descer por causa da gravidade, impactando no pulo
