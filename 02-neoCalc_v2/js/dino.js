@@ -126,7 +126,9 @@ function gameOver() {
 	ctx.clearRect(0, 0, canvas.width, canvas.height)
 	// dino & cactus & clound
 	ctx.drawImage(clound1.background, clound1.x, clound1.y, clound1.w, clound1.h)
-	ctx.drawImage(clound2.background, clound2.x, clound2.y, clound2.w, clound2.h)
+	if(clound2.x > 157 || clund2.x < 100){
+		ctx.drawImage(clound2.background, clound2.x, clound2.y, clound2.w, clound2.h)
+	}
 	ctx.drawImage(dino.background, dino.x, dino.y, dino.w, dino.h)
 	ctx.drawImage(cactus.background, cactus.x, cactus.y, cactus.w, cactus.h);
 
