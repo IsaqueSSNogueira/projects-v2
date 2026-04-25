@@ -2,11 +2,26 @@
 # NeoCalc
 
 <div style="width:100%">
-  <img src="source/readme/calculatorVisor.png" width="45%">
-  <img src="source/readme/calculator.png" width="45%">
-  <img src="source/readme/calculatorGame.png" width="45%">
+  <img src="source/readme/calculatorVisor.jpeg" width="45%">
+  <img src="source/readme/calculator.jpeg" width="45%">
+  <img src="source/readme/calculatorGame.jpeg" width="45%">
 </div>
 
+## About this project
+
+This project is part of a personal initiative to revisit and rebuild past projects in more refined versions. The goal is to reinforce essential concepts while getting back into studying, while also evolving technically by building something that, although simple in concept, carries intention and attention to detail in every aspect.
+As the second project in this new phase, I developed a calculator that integrates an internal mini game. The calculator itself was designed to address common usability gaps, with a strong focus on a smooth user experience and a well-crafted design — the kind that you can genuinely feel proud of refining.
+The mini game, inspired by the classic Chrome Dino, was developed with a focus on flow and feel. The intention here is not complexity, but rather to deliver an engaging and enjoyable experience that can positively surprise users.
+Throughout the development process, I revisited core fundamentals, strengthened my consistency as a developer, and practiced logic that will serve as a foundation for future projects. In addition, I maintained a strong focus on product delivery, thinking not only about building the project, but about the final user experience.
+This new batch of projects represents more than just review — it is an active process of growth. The goal is to solidify my foundation while preparing for more complex challenges, gradually expanding both my technical skills and overall capabilities.
+
+Design reference:
+<img src="source/readme/calculatorBase.png" width="45%">
+Final result:
+<img src="source/readme/calculatorGame.jpeg" width="45%">
+
+
+## 🇧🇷 Português
 
 Este projeto faz parte de uma iniciativa pessoal de revisitar e reconstruir projetos antigos em versões mais refinadas. O objetivo é reforçar conceitos essenciais enquanto retomo os estudos, ao mesmo tempo em que evoluo tecnicamente construindo algo que, apesar de simples na proposta, carrega intencionalidade e cuidado em cada detalhe.
 
@@ -21,4 +36,4 @@ Essa nova leva de projetos representa mais do que revisão: é um processo ativo
 Referência de design:
   <img src="source/readme/calculatorBase.png" width="45%">
 Resultado final:
-  <img src="source/readme/calculatorGame.png" width="45%">
+  <img src="source/readme/calculatorGame.jpeg" width="45%">
