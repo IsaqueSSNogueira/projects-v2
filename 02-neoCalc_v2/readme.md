@@ -15,11 +15,6 @@ The mini game, inspired by the classic Chrome Dino, was developed with a focus o
 Throughout the development process, I revisited core fundamentals, strengthened my consistency as a developer, and practiced logic that will serve as a foundation for future projects. In addition, I maintained a strong focus on product delivery, thinking not only about building the project, but about the final user experience.
 This new batch of projects represents more than just review — it is an active process of growth. The goal is to solidify my foundation while preparing for more complex challenges, gradually expanding both my technical skills and overall capabilities.
 
-Design reference:
-<img src="source/readme/calculatorBase.png" width="45%">
-Final result:
-<img src="source/readme/calculatorGame.jpeg" width="45%">
-
 
 ## 🇧🇷 Português
 
@@ -35,6 +30,7 @@ Essa nova leva de projetos representa mais do que revisão: é um processo ativo
 
 ### Referência de design:
   <img src="source/readme/calculatorBase.png" width="200px">
-[https://www.codewithfaraz.com/content/5/creating-a-simple-calculator-using-html-and-pure-css] (View site)
+[View site](https://www.codewithfaraz.com/content/5/creating-a-simple-calculator-using-html-and-pure-css)
+
 ### Resultado final:
   <img src="source/readme/calculatorGame.jpeg" width="200px">
