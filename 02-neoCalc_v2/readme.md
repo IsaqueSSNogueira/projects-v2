@@ -33,7 +33,8 @@ Durante o desenvolvimento, revisitei fundamentos importantes, fortaleci minha co
 
 Essa nova leva de projetos representa mais do que revisão: é um processo ativo de evolução. A intenção é consolidar minha base enquanto me preparo para desafios maiores, expandindo gradualmente meu repertório e minhas capacidades técnicas.
 
-Referência de design:
+### Referência de design:
+[https://www.codewithfaraz.com/content/5/creating-a-simple-calculator-using-html-and-pure-css] (View site)
   <img src="source/readme/calculatorBase.png" width="45%">
-Resultado final:
+### Resultado final:
   <img src="source/readme/calculatorGame.jpeg" width="45%">
