@@ -2,9 +2,9 @@
 # NeoCalc
 
 <div style="width:100%">
-  <img src="source/readme/calculatorVisor.jpeg" width="45%">
-  <img src="source/readme/calculator.jpeg" width="45%">
-  <img src="source/readme/calculatorGame.jpeg" width="45%">
+  <img src="source/readme/calculatorVisor.jpeg" width="30%">
+  <img src="source/readme/calculator.jpeg" width="30%">
+  <img src="source/readme/calculatorGame.jpeg" width="30%">
 </div>
 
 ## About this project
