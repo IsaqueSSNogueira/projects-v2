@@ -2,9 +2,9 @@
 # NeoCalc
 
 <div style="width:100%">
-  <img src="source/readme/calculatorVisor.jpeg" width="30%">
-  <img src="source/readme/calculator.jpeg" width="30%">
-  <img src="source/readme/calculatorGame.jpeg" width="30%">
+  <img src="source/readme/calculatorVisor.jpeg" width="100px">
+  <img src="source/readme/calculator.jpeg" width="100px">
+  <img src="source/readme/calculatorGame.jpeg" width="100px">
 </div>
 
 ## About this project
@@ -35,6 +35,6 @@ Essa nova leva de projetos representa mais do que revisão: é um processo ativo
 
 ### Referência de design:
 [https://www.codewithfaraz.com/content/5/creating-a-simple-calculator-using-html-and-pure-css] (View site)
-  <img src="source/readme/calculatorBase.png" width="45%">
+  <img src="source/readme/calculatorBase.png" width="100px">
 ### Resultado final:
-  <img src="source/readme/calculatorGame.jpeg" width="45%">
+  <img src="source/readme/calculatorGame.jpeg" width="100px">
