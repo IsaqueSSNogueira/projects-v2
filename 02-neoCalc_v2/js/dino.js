@@ -122,6 +122,7 @@ function initialScreen(){
 
 // game
 export function gameLoop() {
+	isReady = false
 	isPlaying = true;
 	ctx.clearRect(0, 0, canvas.width, canvas.height);
 

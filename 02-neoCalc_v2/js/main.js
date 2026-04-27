@@ -6,6 +6,8 @@ import { expressionButtonClick, calc, eraseInput, clearInput, resetCalc } from "
 // elements
 const displayInput = document.querySelector("#displayInput")
 const displayCanvas = document.querySelector("#canvas")
+const displayContainer = document.querySelector("#displayContainer")
+const calcButton = document.querySelector("#calcButton")
 
 
 
@@ -80,7 +82,6 @@ calcButton.addEventListener("click", () => {
 	// start screen
 	else if(mode === "dino" && isReady){
 		ctx.clearRect(0, 0, canvas.width, canvas.height)
-		isReady = false
 		musicGameLoop.currentTime = 0
 		musicGameLoop.play()
 		gameLoop()
