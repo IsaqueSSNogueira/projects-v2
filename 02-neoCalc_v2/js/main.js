@@ -8,6 +8,7 @@ const displayInput = document.querySelector("#displayInput")
 const displayCanvas = document.querySelector("#canvas")
 const displayContainer = document.querySelector("#displayContainer")
 const calcButton = document.querySelector("#calcButton")
+const numberButton = document.querySelectorAll(".button")
 
 
 
@@ -30,7 +31,6 @@ function toggleMode() {
 	resetGame()
 	resetCalc()
 } 
-
 
 
 

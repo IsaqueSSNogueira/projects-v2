@@ -41,3 +41,4 @@ calc(var)
 
 - Sempre colocar `./` `../` e a extensão `.js`;
 - Se for módulo, não funciona no navegador direto do local, mas no gitpages sim por ser http;
+- Não é possivel alterar valores de uma var dentro do main, ele somente lê e chama funções. Altere o arquivo local.
