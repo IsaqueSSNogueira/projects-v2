@@ -35,7 +35,7 @@ Essa nova leva de projetos representa mais do que revisão: é um processo ativo
 ### 🎨 Design Reference
 
 <p align="left">
-  <img src="source/readme/calculatorBase.png" style="width: 220px; height: 300px; overflow: hidden;">
+  <img src="source/readme/calculatorBase.png" style="width: 220px; overflow: hidden;">
 </p>
 
 🔗 [View original design inspiration](https://www.codewithfaraz.com/content/5/creating-a-simple-calculator-using-html-and-pure-css)
