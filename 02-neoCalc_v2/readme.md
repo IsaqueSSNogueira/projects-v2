@@ -10,9 +10,13 @@
 ## About this project
 
 This project is part of a personal initiative to revisit and rebuild past projects in more refined versions. The goal is to reinforce essential concepts while getting back into studying, while also evolving technically by building something that, although simple in concept, carries intention and attention to detail in every aspect.
+
 As the second project in this new phase, I developed a calculator that integrates an internal mini game. The calculator itself was designed to address common usability gaps, with a strong focus on a smooth user experience and a well-crafted design — the kind that you can genuinely feel proud of refining.
+
 The mini game, inspired by the classic Chrome Dino, was developed with a focus on flow and feel. The intention here is not complexity, but rather to deliver an engaging and enjoyable experience that can positively surprise users.
+
 Throughout the development process, I revisited core fundamentals, strengthened my consistency as a developer, and practiced logic that will serve as a foundation for future projects. In addition, I maintained a strong focus on product delivery, thinking not only about building the project, but about the final user experience.
+
 This new batch of projects represents more than just review — it is an active process of growth. The goal is to solidify my foundation while preparing for more complex challenges, gradually expanding both my technical skills and overall capabilities.
 
 
@@ -31,13 +35,13 @@ Essa nova leva de projetos representa mais do que revisão: é um processo ativo
 ### 🎨 Design Reference
 
 <p align="left">
-  <img src="source/readme/calculatorBase.png" width="200px">
+  <img src="source/readme/calculatorBase.png" style="width: 220px; height: 300px; overflow: hidden;">
 </p>
 
 🔗 [View original design inspiration](https://www.codewithfaraz.com/content/5/creating-a-simple-calculator-using-html-and-pure-css)
 
-### Resultado final:
+### Final Result:
 
 <p align="left">
-  <img src="source/readme/calculatorGame.jpeg" width="200px">  
+  <img src="source/readme/calculatorGame.jpeg" style="width: 220px; height: 300px; overflow: hidden;">  
 </p>
