@@ -2,12 +2,9 @@
 # NeoCalc
 
 <div style="width:100%">
-  
-  <div style="height:330px; background: red;">
-  	<img src="source/readme/calculatorVisor1.jpeg" style="width: 200px; height: 300px; overflow: hidden;">
-  	<img src="source/readme/calculator.jpeg" style="width: 200px; height: 300px; overflow: hidden;">
-	<img src="source/readme/calculatorGame.jpeg" style="width: 200px; height: 300px; overflow: hidden;">
-  </div>
+  	<img src="source/readme/calculatorVisor1.jpeg" style="width: 220px; height: 300px; overflow: hidden;">
+  	<img src="source/readme/calculator.jpeg" style="width: 220px; height: 300px; overflow: hidden;">
+	<img src="source/readme/calculatorGame.jpeg" style="width: 220px; height: 300px; overflow: hidden;">
 </div>
 
 ## About this project
@@ -31,9 +28,16 @@ Durante o desenvolvimento, revisitei fundamentos importantes, fortaleci minha co
 
 Essa nova leva de projetos representa mais do que revisão: é um processo ativo de evolução. A intenção é consolidar minha base enquanto me preparo para desafios maiores, expandindo gradualmente meu repertório e minhas capacidades técnicas.
 
-### Referência de design:
+### 🎨 Design Reference
+
+<p align="left">
   <img src="source/readme/calculatorBase.png" width="200px">
-[View site](https://www.codewithfaraz.com/content/5/creating-a-simple-calculator-using-html-and-pure-css)
+</p>
+
+🔗 [View original design inspiration](https://www.codewithfaraz.com/content/5/creating-a-simple-calculator-using-html-and-pure-css)
 
 ### Resultado final:
-  <img src="source/readme/calculatorGame.jpeg" width="200px">
+
+<p align="left">
+  <img src="source/readme/calculatorGame.jpeg" width="200px">  
+</p>
