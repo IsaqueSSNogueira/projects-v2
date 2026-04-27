@@ -2,7 +2,7 @@
 # NeoCalc
 
 <div style="width:100%">
-  <img src="source/readme/calculatorVisor.jpeg" width="200px">
+  <img src="source/readme/calculatorVisor1.jpeg" width="200px">
   <img src="source/readme/calculator.jpeg" width="200px">
   <img src="source/readme/calculatorGame.jpeg" width="200px">
 </div>
