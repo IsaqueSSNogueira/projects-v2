@@ -12,41 +12,8 @@ let isResult = false;
 const operators = ["+", "*", "/", ".", "-"];
 
 
-numberButton.forEach((item) => {
 
-	const value = item.dataset.value;
-
-	if(value !== "=" && value !== "c" && value !== "<" && value !== "d"){
-		item.addEventListener("click", () => {
-			expressionButtonClick(value)
-		})
-	}
-	else if(value === "="){
-		item.addEventListener("click", () => {
-			calc()
-		})
-	}
-	else if(value === "<"){
-		item.addEventListener("click", () => {
-			eraseInput()
-		})
-	}
-	else if(value === "c"){
-		item.addEventListener("click", () => {
-			clearInput()
-		})
-	}
-	else if(value === "d"){
-		item.addEventListener("click", () => {
-			toggleMode()
-		})
-	}
-	else {
-		displayInput.value = ""
-	}
-})
-
-function expressionButtonClick(value) {
+export function expressionButtonClick(value) {
 	const isOperator = operators.includes(value);
 	const lastChar = expression.at(-1);
 
@@ -75,7 +42,7 @@ function expressionButtonClick(value) {
 	isResult = false;
 }
 
-function calc() {
+export function calc() {
 	/*se houver algo de errado*/
 	if(!expression) return
 
@@ -92,7 +59,7 @@ function calc() {
 	}
 }
 
-function eraseInput() {
+export function eraseInput() {
 	if(expression){
 		const expressionErase = expression.slice(0, -1)
 		expression = expressionErase;
@@ -100,31 +67,13 @@ function eraseInput() {
 	}
 }
 
-function clearInput() {
+export function clearInput() {
 	expression = ""
 	displayInput.value = expression
 }
 
 
-// modo
-let mode = ""
-function toggleMode() {
-	mode = mode === "dino" ? "calc" : "dino";
-	if(mode === "dino"){
-		displayInput.classList.add("hidden")
-		displayCanvas.classList.remove("hidden")
-		startGame()
-
-	}
-	else{
-		displayInput.classList.remove("hidden")
-		displayCanvas.classList.add("hidden")
-		readyPlaySound.pause()
-		loadingSound.pause()
-		musicGameLoop.pause()
-	}
-	// reset 
-	resetGame()
+export function resetCalc(){
 	expression = ""
 	displayInput.value = ""
-} 
+}

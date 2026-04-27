@@ -2,8 +2,8 @@
 // import
 const displayContainer = document.querySelector("#displayContainer")
 const calcButton = document.querySelector("#calcButton")
-const canvas = document.querySelector("#canvas");
-const ctx = canvas.getContext("2d");
+export const canvas = document.querySelector("#canvas");
+export const ctx = canvas.getContext("2d");
 
 // canva display
 canvas.width = displayContainer.clientWidth
@@ -31,14 +31,14 @@ deathSound.src = "./source/game/death_sound_effect.mp3"
 deathSound.volume = 0.2
 const jumpingSound = new Audio() 
 jumpingSound.src = "./source/game/jumping_sound_effect.mp3"
-const musicGameLoop = new Audio()
+export const musicGameLoop = new Audio()
 musicGameLoop.src = "./source/game/music_game_loop.mp3"
 musicGameLoop.volume = 0.2
 
 
 
 // elements
-let dino;
+export let dino;
 let cactus
 let score;
 let clound1;
@@ -52,13 +52,13 @@ let initialScreenId;
 // vars
 let loading = 0
 let maxScore = 0
-let isReady;
-let isPlaying;
-let isGameOver;
+export let isReady;
+export let isPlaying;
+export let isGameOver;
 
 
 
-function resetGame(){
+export function resetGame(){
 		dino = {w: 20, h: 20, x: 30, y: 38, background: dinoSprite, backgroundLoser: "", velocityY: 0, gravity: 0.2, isJumping: false}
 		cactus = {w: 12, h: 22, x: 450, y: 40, background: cactusSprite, backgroundLoser: ""}
   	clound1 = {w:28, h:18, x:100, y:7, background: cloundSprite}
@@ -76,7 +76,7 @@ function resetGame(){
 
 
 // abrir jogo
-function startGame(){
+export function startGame(){
 		// zerar o dino
 		resetGame()
 		initialScreen()
@@ -92,12 +92,14 @@ function initialScreen(){
 		// tela inicial
 		ctx.clearRect(0, 0, canvas.width, canvas.height)
 		
+		// loading screen
 		if(loading < 45){
 			loading += 0.25
 			initialScreenId = requestAnimationFrame(initialScreen)
 			ctx.fillStyle = "gray"
 			ctx.fillRect(106, 30, loading, 1)
 		}
+		// isReady
 		else{
 			cancelAnimationFrame(initialScreenId)
 			loadingSound.pause()
@@ -118,53 +120,8 @@ function initialScreen(){
 }
 
 
-// gameOver
-function gameOver() {
-	isPlaying = false;
-  cancelAnimationFrame(gameLoopId);
-	// clear
-	ctx.clearRect(0, 0, canvas.width, canvas.height)
-	// dino & cactus & clound
-	ctx.drawImage(clound1.background, clound1.x, clound1.y, clound1.w, clound1.h)
-	if(clound2.x > 157 || clund2.x < 100){
-		ctx.drawImage(clound2.background, clound2.x, clound2.y, clound2.w, clound2.h)
-	}
-	ctx.drawImage(dino.background, dino.x, dino.y, dino.w, dino.h)
-	ctx.drawImage(cactus.background, cactus.x, cactus.y, cactus.w, cactus.h);
-
-	// score
-	ctx.fillStyle = "black";
-	ctx.font = "8px Arial";
-	ctx.fillText(Math.floor(score), 240, 15);
-	score += 0.5
-
-	// max score
-	maxScore = maxScore < score ? score : maxScore
-	if(maxScore > 0){
-		ctx.fillStyle = "#5e5e5e"
-		ctx.fillText(`H1 ${Math.floor(maxScore)}`, 200, 15)
-	}
-	
-	// game over text
-	ctx.fillStyle = "black"
-	ctx.font = "10px Arial"
-	ctx.fillText("Fim de jogo", 105, 20)
-	ctx.fillStyle = "black"
-	ctx.font = "8px Arial"
-	ctx.fillText("Jogar denovo", 103, 35)
-	ctx.drawImage(playSprite, 155, 30, 5, 5)
-	// sound
-	deathSound.currentTime = 0.2; // cut delay
-	deathSound.play()
-	// state
-	setTimeout(() => {
-		isGameOver = true;
-	}, 500)
-}
-
-
 // game
-function gameLoop() {
+export function gameLoop() {
 	isPlaying = true;
 	ctx.clearRect(0, 0, canvas.width, canvas.height);
 
@@ -237,27 +194,61 @@ function gameLoop() {
 
 }
 
-// actions
-calcButton.addEventListener("click", () => {
-	// play again
-	if(mode === "dino" && isGameOver){
-		ctx.clearRect(0, 0, canvas.width, canvas.height)
-		resetGame()
-		gameLoop()
-	}
-	// start screen
-	else if(mode === "dino" && isReady){
-		ctx.clearRect(0, 0, canvas.width, canvas.height)
-		isReady = false
-		musicGameLoop.currentTime = 0
-		musicGameLoop.play()
-		gameLoop()
-	}
-	// jump
-  else if (mode === "dino" && !dino.isJumping && !isReady && isPlaying) { // permite o pulo só se já estiver no jogo
-    dino.velocityY = -3; // negativo sobe
+
+export const jumpingDino(){
+		dino.velocityY = -3; // negativo sobe
     dino.isJumping = true; // só permite o pulo quando voltar ao chão
     jumpingSound.currentTime = 0.3; // cut delay
     jumpingSound.play()
-  }
-});
+}
+
+// gameOver
+function gameOver() {
+	isPlaying = false;
+  cancelAnimationFrame(gameLoopId);
+	// clear
+	ctx.clearRect(0, 0, canvas.width, canvas.height)
+	// dino & cactus & clound
+	ctx.drawImage(clound1.background, clound1.x, clound1.y, clound1.w, clound1.h)
+	if(clound2.x > 157 || clund2.x < 100){
+		ctx.drawImage(clound2.background, clound2.x, clound2.y, clound2.w, clound2.h)
+	}
+	ctx.drawImage(dino.background, dino.x, dino.y, dino.w, dino.h)
+	ctx.drawImage(cactus.background, cactus.x, cactus.y, cactus.w, cactus.h);
+
+	// score
+	ctx.fillStyle = "black";
+	ctx.font = "8px Arial";
+	ctx.fillText(Math.floor(score), 240, 15);
+	score += 0.5
+
+	// max score
+	maxScore = maxScore < score ? score : maxScore
+	if(maxScore > 0){
+		ctx.fillStyle = "#5e5e5e"
+		ctx.fillText(`H1 ${Math.floor(maxScore)}`, 200, 15)
+	}
+	
+	// game over text
+	ctx.fillStyle = "black"
+	ctx.font = "10px Arial"
+	ctx.fillText("Fim de jogo", 105, 20)
+	ctx.fillStyle = "black"
+	ctx.font = "8px Arial"
+	ctx.fillText("Jogar denovo", 103, 35)
+	ctx.drawImage(playSprite, 155, 30, 5, 5)
+	// sound
+	deathSound.currentTime = 0.2; // cut delay
+	deathSound.play()
+	// state
+	setTimeout(() => {
+		isGameOver = true;
+	}, 500)
+}
+
+
+export function stopSounds(){
+		readyPlaySound.pause()
+		loadingSound.pause()
+		musicGameLoop.pause()
+}
