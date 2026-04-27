@@ -4,9 +4,9 @@
 <div style="width:100%">
   
   <div style="height:330px; background: red;">
-  	<img src="source/readme/calculatorVisor1.jpeg" width="200px" height="300px">
-  	<img src="source/readme/calculator.jpeg" width="200px" height="300px">
-	<img src="source/readme/calculatorGame.jpeg" width="200px" height="300px">
+  	<img src="source/readme/calculatorVisor1.jpeg" style="width: 200px; height: 300px; overflow: hidden;">
+  	<img src="source/readme/calculator.jpeg" style="width: 200px; height: 300px; overflow: hidden;">
+	<img src="source/readme/calculatorGame.jpeg" style="width: 200px; height: 300px; overflow: hidden;">
   </div>
 </div>
 
