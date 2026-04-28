@@ -45,3 +45,5 @@ Essa nova leva de projetos representa mais do que revisão: é um processo ativo
 <p align="left">
   <img src="source/readme/calculatorGame.jpeg" style="width: 220px; height: 300px; overflow: hidden;">  
 </p>
+
+🎮 [Play Neocalc](https://isaquessnogueira.github.io/projects-v2/02-neoCalc_v2/index.html)
