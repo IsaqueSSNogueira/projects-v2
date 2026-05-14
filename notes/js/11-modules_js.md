@@ -41,4 +41,6 @@ calc(var)
 
 - Sempre colocar `./` `../` e a extensão `.js`;
 - Se for módulo, não funciona no navegador direto do local, mas no gitpages sim por ser http;
+- Se uma função não estiver diretamente no arquivo global, não é possivel usar `onClick`. Defina a partir do `addEventListener`;
+- Tudo que será importado precisa ser exportado `export`, seja funções ou variáveis;
 - Não é possivel alterar valores de uma var dentro do main, ele somente lê e chama funções. Altere o arquivo local.
