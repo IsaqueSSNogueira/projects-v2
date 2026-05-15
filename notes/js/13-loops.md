@@ -52,3 +52,12 @@ for (const key in items){
 - Interador mais prático;
 - Algumas coisas ele não intera, como dentro de funções assícronas (por não esperar);
 
+
+## 😎 Conteúdo a mais 
+
+
+### Continue
+
+- `continue` = pula esse item/interação atual (como um return), geralmente associado a uma condição;
+- Diferenças entre outros: `break` quebra o loop, `continue` pula a interação atual;
+- Funciona em `for`, `while`, `for in`, `for of`, menos `forEach`;
