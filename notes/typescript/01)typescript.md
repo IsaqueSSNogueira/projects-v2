@@ -1,5 +1,5 @@
 
-# 🛑 Typescript
+# ⭕ Typescript
 
 ## 🤔 O que é?
 
