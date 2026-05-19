@@ -1,5 +1,5 @@
 
-## form
+## Elements
 
 <!-- fieldset -->
 ### fieldset
@@ -54,6 +54,7 @@
 - required;
 - readonly;
 - disabled;
+- `autocomplete="off"`: Remove sugestões com base em ultimas digitações no input.
 
 textarea:
 - name;
@@ -81,5 +82,20 @@ button:
 
 label:
 - for;
+
+
+
+## Ações
+
+### Remover comportamentos padrão
+
+- No js, ao incomporar um evento a um elemento:
+
+```
+element.addEventListener("click", (event) => {
+    event.preventDefault()
+    ....
+})
+```
 
 _//_
