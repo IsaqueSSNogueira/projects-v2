@@ -15,3 +15,9 @@ item.addEventListener("click", (evento) => {
 })
 ```
 
+
+## Dicas
+
+### Arrow function
+
+- Arrow Function (`() => `) sem `{}` da return automático;

@@ -11,7 +11,7 @@
 
 ## No JS
 
-### Arquivo secundários
+### 📝 Arquivo secundários
 
 - Exporte o que quer compartilhar:
 
@@ -36,6 +36,67 @@ calc(var)
 
 ```
 
+<br>
+
+
+## 📤📥 Exportar/Importar
+
+No ES Modules (import/export), você precisa exportar de forma explícita: como default ou como named export.
+
+1) 
+```
+// exportar
+let users = ...
+export { users }
+
+// importar
+import  { users } from "..."
+```
+2)
+```
+// exportar
+let users = ...
+export default users
+
+// importar 
+import users from "..."
+```
+
+
+## Namespace import
+
+- ✨ "Namespace import" ou "Importação com alias de módulo inteiro";
+- 🔥 Ele pega TUDO que foi exportado do arquivo e junta num objeto;
+- `import * as objeto from "..."`;
+
+<br>
+
+- arquivo exportar
+```
+export const foundUser = () => {}
+export const createUser = () => {}
+```
+<br>
+
+- arquivo a importar
+```
+import * as loginService from "../services/loginService.js";
+
+// Por debaixo dos panos vira isso
+loginService = {
+  foundUser: [Function],
+  createUser: [Function]
+}
+```
+<br>
+
+- Uso:
+```
+loginService.foundUser(...)
+loginService.createUser(...)
+```
+
+<br>
 
 ## Importante
 
