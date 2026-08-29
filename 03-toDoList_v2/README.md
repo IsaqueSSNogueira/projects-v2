@@ -1,5 +1,5 @@
 
-# 🎆Um novo projeto: To Do List 
+# 🗒 To Do List 
 
 ## Sobre 
 
