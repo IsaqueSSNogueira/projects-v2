@@ -98,7 +98,7 @@ loginService.createUser(...)
 
 <br>
 
-## Importante
+## ❗ Importante
 
 - Sempre colocar `./` `../` e a extensão `.js`;
 - Se for módulo, o navegador trata como `módulo ES` e bloqueia em `file://` por segurança (CORS). Sempre use um servidor (live server, npx serve, npm run dev (para frameworks), gitpages, hospedado, `http://localhost`, etc...);
