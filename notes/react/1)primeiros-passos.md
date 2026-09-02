@@ -7,12 +7,39 @@
 - Foi criado pelo Facebook (atualmente Meta);
 - É utilizado principalmente para construir interfaces de usuário (UI) no frontend;
 - Trabalha com **componentes reutilizáveis**;
-- React não é uma linguagem de programação; ele utiliza JavaScript e pode ser utilizado com TypeScript;
+- React não é uma linguagem de programação - ele utiliza JavaScript e pode ser utilizado com TypeScript;
 - O React fornece uma abordagem baseada em componentes para o desenvolvimento de interfaces, ajudando na organização, reutilização e manutenção do código/aplicação.
 
-## Componetização
 
-<img src="img/componetização.png" width="250px">
+
+## 🥊 Biblioteca VS Framework
+
+- O React é oficialmente uma **biblioteca para interfaces de usuário**;
+
+- Mas aí vem uma pegadinha importante, você provavelmente vai ouvir: **"React é praticamente um framework"** ou **"React é um framework frontend"**. Isso acontece porque o ecossistema React pode fornecer praticamente tudo que você precisa para construir uma aplicação;
+- Mas existe uma diferença entre **React sozinho** e **ecossistema React / frameworks construídos em torno do React**. Por exemplo, Next.js é um framework baseado em React. O Next.js adiciona coisas como roteamento, renderização, estrutura de aplicação, otimizações etc.
+
+```
+React
+└── biblioteca de UI
+
+
+Next.js
+└── framework baseado em React
+``` 
+
+- Sendo assim, **React é uma biblioteca JavaScript que traz uma abordagem de construção de interfaces de usuário baseada em componentes, proporcionando melhor organização, reutilização, manutenção e escalabilidade do código**.
+
+
+
+## 🧩 Componetização
+
+**Arquitetura baseada em componentes**
+
+<br><img src="img/componetização.png" width="250px"><br>
+
+
+
 
 ## 💿 Instalação e configuração
 
