@@ -12,7 +12,7 @@
 
 ## Componetização
 
-![Exemplo visual componetização](public/readme/componetização.png)
+![Exemplo visual componetização](img/componetização.png)
 
 ## 💿 Instalação e configuração
 
