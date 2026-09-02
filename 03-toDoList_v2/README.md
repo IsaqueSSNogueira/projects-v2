@@ -1,75 +1,11 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🗒 To Do List 
 
-Currently, two official plugins are available:
+## Sobre 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
-```
-
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
-```
+- Este projeto é a sequência do que estava sendo desenvolvido no repositório "node-study". Ele serviu para o aprendizado na prática da criação de um servidor mais robusto, utilizando node.js, inicialmente em um único arquivo, para depois migrar para ser separado em `server | app | routes | controllers | services` e finalizando com a integração do Mongo DB Atlas para persistência externa e hospedagem do servidor no Render;
+- Aqui, após a conclusão da base dele, será feito de lamboratório para relembrar conceitos fortes, como **React** (anteriormente eu foquei em utilizar o vanilla de forma estratégica para reforçar a base após um período longo sem estudos, agora voltarei para o React do qual é meu principal foco no desenvolvimento) e também para aprender e integrar na prática o **typescript**;
+- Será de certa forma mais uma revisão das etapas anteriores devido a mudança de arquitetura, algo essencial para reforçar o conteúdo ainda fresco e abrir um novo olhar sobre a construção a partir de testes, analogias de fluxo e funcionamento, assim reforçando minha lógica, meu entendimento e minha memória diante da construção dessa aplicação;
+- A proposta é de reconstruir ele em uma nova arquitetura, revendo conceitos e aprendendo novos, construindo algo mais robusto em meio ao estudo, servindo de fato como laboratório. Após a conclusão, irei repagir algumas coisas para torna-lo mais próximo de um **MVP** real para uso;
+- Após esse será retornado o Binder Notes.
+ 
