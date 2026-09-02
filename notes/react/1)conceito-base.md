@@ -1,4 +1,5 @@
 
+
 # 🏗 React
 
 ## 🤔 O que é? 
@@ -7,7 +8,7 @@
 - Foi criado pelo Facebook (atualmente Meta);
 - É utilizado principalmente para construir interfaces de usuário (UI) no frontend;
 - Trabalha com **componentes reutilizáveis**;
-- React não é uma linguagem de programação - ele utiliza JavaScript e pode ser utilizado com TypeScript;
+- React não é uma linguagem de programação. Ele utiliza JavaScript e pode ser utilizado com TypeScript;
 - O React fornece uma abordagem baseada em componentes para o desenvolvimento de interfaces, ajudando na organização, reutilização e manutenção do código/aplicação.
 
 
@@ -36,28 +37,11 @@ Next.js
 
 **Arquitetura baseada em componentes**
 
-<br><img src="img/componetização.png" width="250px"><br>
+<img src="img/componetização.png" width="250px"><br>
 
 - Componetização é o conceito de **dividir a interface** em componentes individuais e independentes, que podem ser **reutilizados** em diferentes partes da aplicação;
 - Cada componente pode receber propriedades (props), que funcionam de forma semelhante a parâmetros, permitindo **passar dados** do componente **pai** para o componente **filho** e personalizar seu conteúdo, comportamento e aparência;
 - Um mesmo componente pode ser reutilizado várias vezes, recebendo props diferentes em cada utilização;
-- Cada instância de um componente possui seu próprio estado, quando definido, permitindo que diferentes instâncias do mesmo componente mantenham comportamentos e dados independentes. `componente = o molde`,  `instância do componente = uma utilização daquele molde`;
+- Cada instância de um componente possui seu próprio estado, quando definido, permitindo que diferentes instâncias do mesmo componente mantenham comportamentos e dados independentes. Analogia: `componente = o molde`,  `instância do componente = uma utilização daquele molde`;
 - Cada componente pode conter componentes internos, permitindo uma estrutura hierárquica e a criação de interfaces mais complexas e modulares.
 
-
-## 💿 Instalação e configuração
-
-1) Será utilizado o Vite. No terminal crie o projeto e defina a configuração conforme o o processo for pedindo:
-
-- `npm create vite@latest my-react-app -- --template react-ts `; 
-- `> project name` `nome do projeto`;
-- `> Select a frameword:` `React`;
-- `> Select a variant:` `JavaScript` | `Typescript`;
-- `> Which linter to use?` `EsLint`.
-
-2) Entre na pasta, instale as dependências e inicie o servidor:
-
-- `cd nome-projeto`;
-- `npm install`;
-- `npm run dev`;
-- Vite irá retornar algo como `Local: http://localhost:5173/`, abra o endereço no navegador.
