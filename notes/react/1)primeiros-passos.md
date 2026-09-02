@@ -12,7 +12,7 @@
 
 ## Componetização
 
-<img src="img/componetização.png" width="100px">
+<img src="img/componetização.png" width="250px">
 
 ## 💿 Instalação e configuração
 
