@@ -12,7 +12,9 @@
 
 ## Componetização
 
-![Exemplo visual componetização](img/componetização.png)
+<div width="200px">
+    ![Exemplo visual componetização](img/componetização.png)
+</div>
 
 ## 💿 Instalação e configuração
 
