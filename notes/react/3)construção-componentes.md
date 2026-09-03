@@ -22,8 +22,9 @@ const App = () => {
 export default App;
 ```
 
+<br> 
 
-## Componentes 
+## 🧩 Componentes 
 
 
 - Em um projeto React, cada componente geralmente é definido em um arquivo separado com a extensão .jsx (ou .tsx, se preferir), e esses componentes são importados para o App.jsx ou outros componentes conforme necessário.
@@ -84,7 +85,7 @@ export default App;
 
 
 
-### Criação e importação de um componente
+### 📤 Criação e importação de um componente
 
 Passos para Criar um Componente React:
 1. Criar o Arquivo do Componente;
