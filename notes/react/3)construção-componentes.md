@@ -6,7 +6,6 @@
 - **App.jsx**: É um componente principal em um projeto React, e sua função é servir como o componente de nível superior que contém outros componentes. Estrutura:
   
 ```
-import React from 'react'; // não necessário importar
 // Importa outros componentes
 import MeuComponente from './MeuComponente.jsx'; 
 
@@ -37,8 +36,6 @@ export default App;
 - É importante exportar os componentes criados de dentro de seu respectivo arquivo e importa-lo no App.jsx:
 
 ```
-import React from 'react'; // !!não mais necessário importar
-
 // componente
 const MainContent = () => {
   return (
@@ -53,8 +50,6 @@ export default MainContent;
 ```
 
 ```
-import React from 'react'; // não mais necessário importar
-
 /* componentes a serem importados */
 // Importa o cabeçalho
 import Header from './Header';
@@ -99,7 +94,6 @@ Passos para Criar um Componente React:
 
 ```
 /* from Button.jsx */
-import React from 'react'; // não necessário ser importado, só no App (nem nele mais)
 
 // Definindo o componente de botão
 const Button = ({ label, onClick }) => {
@@ -114,7 +108,6 @@ export default Button;
 ```
 
 ```
-import React from 'react'; // não necessário importar
 import Button from './Button'; // Importa o componente Button
 
 const App = () => {
