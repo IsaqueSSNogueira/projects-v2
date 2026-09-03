@@ -22,7 +22,7 @@
 ## 🗃 Arquivos
 
 
-- **index.html** -> base principal que agora será apenas o receptor do React e não o implementador do html. A div root irá ser o container de todos os componentes importados:
+- **index.html** -> base principal que agora será apenas o receptor do React e não como foco de implementar do html. A div root irá ser o container de todos os componentes importados:
 
 ```
 <!DOCTYPE html>
@@ -42,13 +42,13 @@
 ```
 
 
-- **index.js** ou **main.jsx** -> Arquivo principal em que será: Ponto de entrada da aplicação, onde você cria a raiz React e renderiza o componente principal. (parte 1), importado os estilos (parte 2) e renderizado no html dentro daquela div 'root' (parte 3): 
+- **index.js** ou **main.jsx** -> Arquivo principal em que será ponto de entrada da aplicação, onde você cria a raiz React e renderiza o componente principal, importado os estilos e renderizado no html dentro daquela div 'root': 
 
 
 ```
 // Importa a biblioteca React
-import React from 'react';          
-import { StrictMode } from 'react';
+import React from 'react'; // não é mais necessário nessa versão         
+import { StrictMode } from 'react'; // identifica problemas
 
 // Importa o método para renderizar o React
 import ReactDOM from 'react-dom/client';  
