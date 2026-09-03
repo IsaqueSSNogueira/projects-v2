@@ -132,6 +132,6 @@ const App = () => {
 
 export default App;
 ```
-
+ 
 - Parênteses () podem ser usados para organizar um retorno JSX que ocupa várias linhas. Eles não são obrigatórios para retornar JSX;
 - Tags que não possuem fechamento no html convencional (como img) precisam ter seu fechamento declarado, sendo autofechada ()`<img/>`. No JSX, elementos sem conteúdo precisam ser autoclosados, como <img />, <input /> e <br />.
