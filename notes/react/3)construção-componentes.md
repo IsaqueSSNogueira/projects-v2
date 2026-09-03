@@ -89,7 +89,7 @@ Passos para Criar um Componente React:
 4. Importar e Usar o Componente.
 
 
-- Por convensão, arquivo.jsx tem que ter o mesmo nome do componente, tendo como padrão o PascalCase. Não que seja obrigatório, mas é para manter limpo, claro e padronizado;
+- Por convensão, arquivo.jsx constuma ter o mesmo nome do componente, tendo como padrão o PascalCase. Não que seja obrigatório, mas é para manter limpo, claro e padronizado;
 
 
 ```

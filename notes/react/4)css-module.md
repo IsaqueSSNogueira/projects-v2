@@ -4,15 +4,17 @@
 
 ## 🎨📂 CSS module
 
-- CSS Module é uma forma de incorporar os estilos de maneira separada para um respectivo arquivo, sem que eles caiam direto no escopo global;
-- Para isso, defina a extensão do arquivo como  `.module.css` e importe no `jsx/tsx`como `import styles from "arquivo.module.css"`;
-- Dentro do componente incorpore como `className={styles.nomeClasse}`.
+- CSS Modules permitem definir estilos com escopo local ao componente/arquivo, evitando conflitos de classes no escopo global;
+- Para usa-lo, defina a extensão do arquivo como  `.module.css` e importe no `jsx/tsx`como `import styles from "arquivo.module.css"`;
+- Dentro do componente incorpore como `className={styles.nomeClasse}`;
+- É comum utilizar um arquivo `.module.css` associado a cada componente, mantendo seus estilos organizados e próximos ao componente.
+
 
 
 ### 🤔 Diferenciações
 
 #### 📝Comum:
-- Arquivo global, um único arquivo CSS para todo o projeto (assim como de costume);
+- Arquivo de escopo global;
 - importando: `import './style.css'` ;
 - incluindo no elemento xml: `<div className="nome-classe"`; 
 
@@ -26,6 +28,4 @@
 ### 🎈 Considerações:
 - Nome classes:
 	- Se for com `-` ele deve ser declarado em `={styles['']}`;
-	- Use nomes genéricos, mas contextualizados ao componente, como `mainContainer`, `header`, `formButton`;
-	- Não precisa exagerar na diferenciação, mas evite nomes excessivamente vagos como `box` ou `div`;
-	- Dê uma leve personalização se necessário, como `product-card`, `user-info`.
+	-Use nomes descritivos e contextualizados ao componente (como `mainContainer`, `header`, `formButton`, `productCard`, `userInfo`), evitando nomes excessivamente vagos (como `box` ou `div`);
