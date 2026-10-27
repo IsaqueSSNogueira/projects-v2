@@ -8,6 +8,7 @@ export const PlayerProvider = ({ children }) => {
     /*wins for players*/
     const [winsX, setWinsX] = useState(0)
     const [winsO, setWinsO] = useState(0)
+    const [winner, setWinner] = useState("") 
 
     /*current player*/
     const [currentPlayer, setCurrentPlayer] = useState("X");
@@ -40,21 +41,30 @@ export const PlayerProvider = ({ children }) => {
         setClickedCells([])
         setResetKey(prev => prev + 1)
     }
+
+    const [showGameResultModal, setShowGameResultModal] = useState(false)
+    const showWinner = (boolean) => {
+
+        setShowGameResultModal(boolean)
+    }
     
  
     /*function determine winner*/
     const determineWinner = (isXWinner, isOWinner) => {
 
         if(clickedCells.length > 8){
-            alert("Empate")
+            setWinner("Empate")
+            showWinner(true)
         }
         else if(isXWinner){
             setWinsX(prev => prev + 1)
-            alert("Jogador X venceu")
+            setWinner("X")
+            showWinner(true)
         }
         else if(isOWinner){
             setWinsO(prev => prev + 1)
-            alert("Jogador O venceu")
+            setWinner("O")
+            showWinner(true)
         }
         else{
             return;
@@ -101,7 +111,7 @@ export const PlayerProvider = ({ children }) => {
 
     
     return (
-        <PlayerContext.Provider value={{ currentPlayer, togglePlayer, addPlayerMove, resetKey, resetGame, winsX, winsO }}>
+        <PlayerContext.Provider value={{ currentPlayer, togglePlayer, addPlayerMove, resetKey, resetGame, winsX, winsO, showGameResultModal, showWinner, winner }}>
             {children}
         </PlayerContext.Provider>
     )

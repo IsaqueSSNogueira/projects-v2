@@ -1,0 +1,32 @@
+
+
+
+.symbolContainer {
+    position: relative;
+    top:-20px;
+    width: 68px;
+    height: 70px;
+    border-radius: 100%;
+    border:2px solid rgb(219, 249, 210);
+    outline: 2px solid rgb(217, 250, 184);
+    box-shadow: 0 0 8px rgb(168, 224, 112);
+    background-image:linear-gradient(to bottom right, rgb(58, 156, 88) 0%,  rgb(5, 87, 33) 70%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trophySymbol {
+    width: 38px;
+    height: 38px;
+    color: rgb(249, 249, 219);
+}
+
+.starSymbol {
+    position: absolute;
+    top:34%;
+    width: 12px;
+    height: 12px;  
+    color:rgb(74, 189, 108);  
+}
+
