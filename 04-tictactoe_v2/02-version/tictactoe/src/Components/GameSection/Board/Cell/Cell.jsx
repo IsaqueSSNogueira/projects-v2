@@ -1,7 +1,8 @@
 
-import { useContext, useEffect, useState } from "react";
-import styles from "./Cell.module.css";
+import { useContext, useEffect, useRef, useState } from "react";
 import { PlayerContext } from "../../../../Contexts/PlayerContext";
+import cliskSound from "./../../../../assets/audio/clickButton/amaze98-clicking-interface-select-201946.mp3"
+import styles from "./Cell.module.css";
 
 
 
@@ -9,9 +10,22 @@ const Cell = ({ index }) => {
 
     const { currentPlayer, addPlayerMove, resetKey } = useContext(PlayerContext)
 
+
+    const sound = useRef(null)
     /*status & style*/
     const [cellStatus, setCellStatus] = useState("")
     const [cellStyle, setCellStyle] = useState("")
+
+    const playSound = () => {
+        if(!sound.current){
+            sound.current = new Audio()
+        }
+        sound.current.src = cliskSound;
+        sound.current.volume = 0.4;
+        sound.current.load();
+        sound.current.currentTime = 0;
+        sound.current.play()
+    }
 
 
     /*clear*/
@@ -35,6 +49,7 @@ const Cell = ({ index }) => {
 
     const handleClick = () => {
         if(cellStatus !== "") return
+        playSound()
         setCellStatus(currentPlayer)
         addPlayerMove(index)
     }

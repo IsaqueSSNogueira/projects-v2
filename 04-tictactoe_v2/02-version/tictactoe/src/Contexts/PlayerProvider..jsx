@@ -1,5 +1,6 @@
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import soundResetFile from "./../assets/audio/resetGame/freesound_community-menu-button-89141.mp3"
 import { PlayerContext } from "./PlayerContext"
 
 
@@ -33,6 +34,19 @@ export const PlayerProvider = ({ children }) => {
     const [playerOMoves, setPlayerOMoves] = useState([])
     const [clickedCells, setClickedCells] = useState([])
 
+    const soundReset = useRef(null)
+
+    const soundResetFunction = () => {
+        if(!soundReset.current){
+            soundReset.current = new Audio()
+        }
+        soundReset.current.src = soundResetFile;
+        soundReset.current.volume = 0.5;
+        soundReset.current.pause()
+        soundReset.current.currentTime = 0;
+        soundReset.current.play()
+    }
+
     /*reset game*/
      const [resetKey, setResetKey] = useState(0)
      const resetGame = () => { 
@@ -40,7 +54,10 @@ export const PlayerProvider = ({ children }) => {
         setPlayerXMoves([])
         setClickedCells([])
         setResetKey(prev => prev + 1)
+        soundResetFunction()
     }
+
+    
 
     const [showGameResultModal, setShowGameResultModal] = useState(false)
     const showWinner = (boolean) => {
@@ -52,11 +69,7 @@ export const PlayerProvider = ({ children }) => {
     /*function determine winner*/
     const determineWinner = (isXWinner, isOWinner) => {
 
-        if(clickedCells.length > 8){
-            setWinner("Empate")
-            showWinner(true)
-        }
-        else if(isXWinner){
+        if(isXWinner){
             setWinsX(prev => prev + 1)
             setWinner("X")
             showWinner(true)
@@ -66,10 +79,13 @@ export const PlayerProvider = ({ children }) => {
             setWinner("O")
             showWinner(true)
         }
+        else if(clickedCells.length >= 9){
+            setWinner("Empate")
+            showWinner(true)
+        }
         else{
             return;
         }
-        resetGame()
     }
 
 
@@ -108,6 +124,7 @@ export const PlayerProvider = ({ children }) => {
     useEffect(() => {
         checkWinner()
     }, [clickedCells])
+
 
     
     return (

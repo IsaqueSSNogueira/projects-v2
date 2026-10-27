@@ -10,11 +10,15 @@ import { PlayerContext } from "../../../Contexts/PlayerContext";
 
 const ModalResetButton = () => {
 
-    const {showWinner} = useContext(PlayerContext)
+    const {showWinner, resetGame} = useContext(PlayerContext)
 
+    const clickResetButton = () => {
+        resetGame()
+        showWinner(false)
+    }
 
     return (
-        <button className={styles.resetButton} onClick={() => showWinner(false)}>
+        <button className={styles.resetButton} onClick={() => clickResetButton()}>
             <FontAwesomeIcon icon={faXmark} className={styles.closeSymbol}/>
             Fechar
         </button>
