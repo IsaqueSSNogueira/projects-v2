@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="PT-br">
+
+<head>
+	<title>Tic Tac Toe</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="icon" href="">
+	<script defer src="js/script.js"></script>
+</head>
+
+<body>
+
+	<!-- main container -->
+	<main>
+		<!-- title -->
+		<h1># Tic Tac Toe</h1>
+
+		<!-- board -->
+		<section aria-label="Board">
+			<div class="board">
+				<button data-index="0" class="cell rigthDown"></button>
+				<button data-index="1" class="cell centerDown"></button>
+				<button data-index="2" class="cell leftDown"></button>
+				<button data-index="3" class="cell right"></button>
+				<button data-index="4" class="cell"></button>
+				<button data-index="5" class="cell left"></button>
+				<button data-index="6" class="cell rightTop"></button>
+				<button data-index="7" class="cell centerTop"></button>
+				<button data-index="8" class="cell leftTop"></button>
+			</div>
+		</section>
+
+		
+
+		<!-- status -->
+		<p arial-live="Polite" class="gameStatusText">
+			Vez do jogador <span id="gameStatusValue">X</span>
+		</p>
+
+
+		<!-- footer -->
+		<footer>
+			<!-- score -->
+			<section arial-label="Score" class="scoreArea">
+				<h2>Score</h2>
+				<div>
+					<p>Player X: <span id="scoreX"></span></p>
+				</div>
+
+				<div>
+					<p>Player O: <span id="scoreO"></span></p>
+				</div>
+
+			</section>
+			
+			<!-- restart --> 
+			<button class="restartButton">Restart Match</button>
+		</footer>
+
+	</main>
+
+</body>
+
+</html>

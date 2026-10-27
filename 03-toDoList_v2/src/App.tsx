@@ -1,16 +1,15 @@
 
-import { useState } from "react";
-import Button from "./Button.tsx"
-import "./App.css"
+// components
+import AuthPage from "./pages/AuthPage/AuthPage.tsx"
+// style
+import styles from "./App.module.css"
 
 const App = () => {
 
-  const [number, setNumber] = useState(0)
-
-  const functionButton = () => {setNumber(number + 1)}
-
   return (
-    <Button onClick={functionButton} value={number} />
+    <div className={styles.app}>
+      <AuthPage />
+    </div>
   )
 }
 

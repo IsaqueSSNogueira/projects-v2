@@ -1,0 +1,35 @@
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    width: 80%;
+    padding: 20px 0 5px;
+}
+
+.inputs {
+    font-size: 0.9rem;
+    padding: 9px;
+    border-radius: 3px;
+    border:1px solid black;
+    width: 100%;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.authButton {
+    background-color: rgba(0,110,255,0.5);
+    border:none;
+    padding:8px;
+    border-radius:6px;
+    color:white;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.authButton:hover {
+    background-color: rgb(4,90,204);
+}

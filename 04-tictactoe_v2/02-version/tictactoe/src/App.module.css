@@ -1,0 +1,13 @@
+
+
+.main {
+    width: 300px;
+    height: 500px;
+    border:2px solid rgb(80, 217, 121);
+    border-radius: 5%;
+    background-color: rgb(249, 243, 231);
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    /*rgb(168, 247, 189);*/
+}
