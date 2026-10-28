@@ -1,13 +1,16 @@
 
 import { useEffect, useRef, useState } from "react";
-import soundResetFile from "./../assets/audio/resetGame/freesound_community-menu-button-89141.mp3"
 import { PlayerContext } from "./PlayerContext"
+
+/*sounds*/
+import soundRefFile from "./../assets/audio/resetGame/freesound_community-menu-button-89141.mp3"
+import soundStartFile from "./../assets/audio/startGame/floraphonic-cute-level-up-2-189851.mp3";
+import winSound from "./../assets/audio/endGame/win/floraphonic-arcade-ui-18-229517.mp3"
+import drawSound from "./../assets/audio/endGame/draw/freesound_community-negative_beeps-6008.mp3"
 
 
 export const PlayerProvider = ({ children }) => {
 
-
-    const [currentScreen, setCurrentScreen] = useState("Start")
 
 
     /*wins for players*/
@@ -38,17 +41,35 @@ export const PlayerProvider = ({ children }) => {
     const [playerOMoves, setPlayerOMoves] = useState([])
     const [clickedCells, setClickedCells] = useState([])
 
-    const soundReset = useRef(null)
+    const soundRef = useRef(null)
 
-    const soundResetFunction = () => {
-        if(!soundReset.current){
-            soundReset.current = new Audio()
+    const playSoundFunction = (type) => {
+      
+        if(!soundRef.current){
+            soundRef.current = new Audio()
         }
-        soundReset.current.src = soundResetFile;
-        soundReset.current.volume = 0.5;
-        soundReset.current.pause()
-        soundReset.current.currentTime = 0;
-        soundReset.current.play()
+
+        soundRef.current.volume = 0.5;
+        soundRef.current.pause()
+        soundRef.current.currentTime = 0;
+        soundRef.current.load();
+
+        if (type === "start") {
+            soundRef.current.src = soundStartFile;
+        }
+        else if(type === "reset") {
+            soundRef.current.src = soundRefFile;
+        }
+        else if(type === "win"){
+            soundRef.current.src = winSound;
+            soundRef.current.volume = 1;
+        }
+        else if(type === "draw"){
+            soundRef.current.src = drawSound;
+            soundRef.current.volume = 0.4;
+        }
+
+        soundRef.current.play()
     }
 
     /*reset game*/
@@ -58,7 +79,7 @@ export const PlayerProvider = ({ children }) => {
         setPlayerXMoves([])
         setClickedCells([])
         setResetKey(prev => prev + 1)
-        soundResetFunction()
+        playSoundFunction("reset")
     }
 
     
@@ -132,7 +153,7 @@ export const PlayerProvider = ({ children }) => {
 
     
     return (
-        <PlayerContext.Provider value={{ currentPlayer, togglePlayer, addPlayerMove, resetKey, resetGame, winsX, winsO, showGameResultModal, showWinner, winner, currentScreen, setCurrentScreen }}>
+        <PlayerContext.Provider value={{ currentPlayer, togglePlayer, addPlayerMove, resetKey, resetGame, winsX, winsO, showGameResultModal, showWinner, winner, playSoundFunction }}>
             {children}
         </PlayerContext.Provider>
     )

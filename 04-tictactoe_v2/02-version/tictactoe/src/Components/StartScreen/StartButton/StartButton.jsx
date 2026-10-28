@@ -8,15 +8,11 @@ import { Link } from "react-router";
 
 const StartButton = () => {
 
-    const {setCurrentScreen} = useContext(PlayerContext);
-
-    const startGameFunction = () => {
-        setCurrentScreen("Game")
-    }
+    const {playSoundFunction} = useContext(PlayerContext);
 
 
     return (
-            <Link to="/Game" className={styles.startButton} onClick={startGameFunction}>
+            <Link to="/game" className={styles.startButton} onClick={() => playSoundFunction("start")}>
 
                 <FontAwesomeIcon icon={faPlay} className={styles.playIcon} />
                 Iniciar
