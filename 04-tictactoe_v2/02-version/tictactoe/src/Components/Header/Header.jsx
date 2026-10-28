@@ -1,12 +1,17 @@
 
 import styles from "./Header.module.css"
+import ReturnPageButton from "./ReturnPageButton/ReturnPageButton";
 
 
-const Header = () => {
+
+const Header = ({ isStartScreen }) => {
 
 
     return (
         <header className={styles.header}>
+
+            {!isStartScreen && <ReturnPageButton />}
+
             <h1 className={styles.h1}>
                 <span className={styles.h1Hash}># </span>
                 Tic Tac 

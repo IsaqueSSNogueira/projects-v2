@@ -10,7 +10,7 @@ const StartScreen = () => {
 
     return(
         <div className={styles.startScreen}>
-            <Header />
+            <Header isStartScreen={true} />
             <GameLogo />
             <WelcomeText />
             <StartButton />

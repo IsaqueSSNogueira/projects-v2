@@ -4,6 +4,7 @@ import { useContext } from "react";
 import { PlayerContext } from "./Contexts/PlayerContext";
 import styles from "./App.module.css"
 import StartScreen from "./Components/StartScreen/StartScreen";
+import { Route, Routes } from "react-router";
 
 
 
@@ -15,8 +16,10 @@ const App = () => {
 
   return(
       <main className={styles.main}>
-        {currentScreen === "Start" && <StartScreen />}
-        {currentScreen === "Game" && <GameScreen />}
+        <Routes>
+          <Route path="/" element={<StartScreen />} />
+          <Route path="/game" element={<GameScreen />} />
+        </Routes>
         {/**/}
       </main>
   )

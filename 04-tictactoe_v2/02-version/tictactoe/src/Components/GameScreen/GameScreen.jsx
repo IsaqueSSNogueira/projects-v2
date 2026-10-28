@@ -13,7 +13,7 @@ const GameScreen = () => {
 
     return(
         <div className={styles.GameScreen}>
-            <Header />
+            <Header isStartScreen={false} />
             <GameSection />
             <GameControls />
             {showGameResultModal && <GameResultModal />}
