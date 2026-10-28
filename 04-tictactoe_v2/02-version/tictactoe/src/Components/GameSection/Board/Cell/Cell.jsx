@@ -11,11 +11,12 @@ const Cell = ({ index }) => {
     const { currentPlayer, addPlayerMove, resetKey } = useContext(PlayerContext)
 
 
-    const sound = useRef(null)
     /*status & style*/
     const [cellStatus, setCellStatus] = useState("")
     const [cellStyle, setCellStyle] = useState("")
 
+    /*
+    const sound = useRef(null)
     const playSound = () => {
         if(!sound.current){
             sound.current = new Audio()
@@ -26,6 +27,7 @@ const Cell = ({ index }) => {
         sound.current.currentTime = 0;
         sound.current.play()
     }
+    */
 
 
     /*clear*/
@@ -49,7 +51,7 @@ const Cell = ({ index }) => {
 
     const handleClick = () => {
         if(cellStatus !== "") return
-        playSound()
+        /*playSound()*/
         setCellStatus(currentPlayer)
         addPlayerMove(index)
     }
