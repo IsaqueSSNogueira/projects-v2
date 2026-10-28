@@ -7,8 +7,8 @@
     width: 100%;
     height: 100%;
     border: none;
+    background-color: transparent;
     box-shadow: 0 0 2px rgba(0,0,0,0.2);
-    background-color: rgba(0,0,0,0);
     border-radius: 10%;
     cursor: pointer;
     font-family:'Ubuntu', sans-serif;
@@ -29,9 +29,19 @@
 
 
 .playerO {
-    color: rgb(117, 179, 31);
+    background: linear-gradient(to bottom right, rgb(182, 245, 94) 0%, rgb(82, 250, 52) 20%, rgb(88, 133, 24) 80%, rgb(71, 107, 19));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: 0 2px 3px rgba(96, 201, 94, 0.3);
+    font-size: 3rem;
 }
 
-.playerX, .playerO {
+.playerX {
+    background: linear-gradient(to bottom, rgb(52, 102, 90), rgb(0, 47, 14));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: 0 2px 3px rgba(0,0,0,0.3);
     font-size: 3rem;
 }

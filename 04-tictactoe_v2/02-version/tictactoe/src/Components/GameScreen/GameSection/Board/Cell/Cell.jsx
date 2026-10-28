@@ -1,7 +1,7 @@
 
 import { useContext, useEffect, useRef, useState } from "react";
-import { PlayerContext } from "../../../../Contexts/PlayerContext";
-import cliskSound from "./../../../../assets/audio/clickButton/amaze98-clicking-interface-select-201946.mp3"
+import { PlayerContext } from "./../../../../../Contexts/PlayerContext";
+import cliskSound from "./../../../../../assets/audio/clickButton/amaze98-clicking-interface-select-201946.mp3"
 import styles from "./Cell.module.css";
 
 

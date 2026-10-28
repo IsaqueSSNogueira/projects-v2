@@ -1,0 +1,49 @@
+
+
+.gameLogoContainer {
+    box-shadow: 3px 5px 12px rgba(0,0,0,0.2), 3px 6px 15px rgba(146, 222, 40, 0.8);
+    border-radius: 10%;
+    width: 100px;
+    height: 100px;
+    margin: 50px 0 20px 0;
+    transform: rotate(8deg);
+    display: grid;
+    grid-template-columns: repeat(2, 42%);
+    grid-template-rows: repeat(2, 42%);
+    gap:2px;
+    place-content: center;
+}
+
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0);
+    border:1px solid rgba(0,0,0,0.1);
+    box-shadow: 0 0 4px rgba(0,0,0,0.1);
+    border-radius: 15%;
+    cursor: pointer;
+    font-family:'Ubuntu', sans-serif;
+    font-size: 2.5rem;
+    transition: font-size 0.2s;
+    font-family:'Sora', sans-serif;
+    font-weight: 700;
+}
+
+.playerO {
+    background: linear-gradient(to bottom right, rgb(182, 245, 94) 0%, rgb(82, 250, 52) 20%, rgb(88, 133, 24) 80%, rgb(71, 107, 19));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: 0 2px 3px rgba(96, 201, 94, 0.3);
+}
+
+.playerX {
+    background: linear-gradient(to bottom, rgb(52, 102, 90), rgb(0, 47, 14));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: 0 2px 3px rgba(0,0,0,0.3);
+}
+

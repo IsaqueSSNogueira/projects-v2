@@ -1,7 +1,7 @@
 
 import { useContext } from "react";
 import styles from "./GameStatus.module.css"
-import { PlayerContext } from "../../../Contexts/PlayerContext";
+import { PlayerContext } from "../../../../Contexts/PlayerContext";
 
 
 const GameStatus = () => {

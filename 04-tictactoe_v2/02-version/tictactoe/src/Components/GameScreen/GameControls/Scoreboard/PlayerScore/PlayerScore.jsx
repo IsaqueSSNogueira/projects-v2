@@ -4,7 +4,6 @@ import styles from "./PlayerScore.module.css";
 
 const PlayerScore = ({ player, wins}) => {
 
-    const value = 1;
 
     const playerStyle = player === "X" ? styles.playerXScore : styles.playerOScore;
 

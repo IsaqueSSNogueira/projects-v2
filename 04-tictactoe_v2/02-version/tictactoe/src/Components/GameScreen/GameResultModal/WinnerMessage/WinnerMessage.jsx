@@ -1,8 +1,8 @@
 
 import { useContext, useEffect, useRef, useState } from "react";
-import { PlayerContext } from "../../../Contexts/PlayerContext";
-import winSound from "./../../../assets/audio/endGame/win/floraphonic-arcade-ui-18-229517.mp3"
-import drawSound from "./../../../assets/audio/endGame/draw/freesound_community-negative_beeps-6008.mp3"
+import { PlayerContext } from "./../../../../Contexts/PlayerContext";
+import winSound from "./../../../../assets/audio/endGame/win/floraphonic-arcade-ui-18-229517.mp3"
+import drawSound from "./../../../../assets/audio/endGame/draw/freesound_community-negative_beeps-6008.mp3"
 import styles from "./WinnerMessage.module.css";
 
 

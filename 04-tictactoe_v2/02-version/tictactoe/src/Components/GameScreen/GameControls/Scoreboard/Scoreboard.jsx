@@ -2,7 +2,7 @@
 import PlayerScore from "./PlayerScore/PlayerScore";
 import styles from "./Scoreboard.module.css";
 import { useContext } from "react";
-import { PlayerContext } from "../../../Contexts/PlayerContext";
+import { PlayerContext } from "./../../../../Contexts/PlayerContext";
 
 
 const Scoreboard = () => {

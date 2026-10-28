@@ -1,0 +1,25 @@
+
+
+.footerText {
+    color:rgba(0,0,0,0.7);
+    font-size: 0.7rem;
+    position: absolute;
+    bottom: 15px;
+}
+
+.footerText::before, .footerText::after {
+    content: '';
+    width: 30px;
+    height: 1px;
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    top:50%;
+}
+
+.footerText::before {
+    left:-40%;
+}
+
+.footerText::after {
+    right:-40%;
+}

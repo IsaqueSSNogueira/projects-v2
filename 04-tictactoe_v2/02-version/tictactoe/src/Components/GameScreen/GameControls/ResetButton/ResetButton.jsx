@@ -1,6 +1,6 @@
 
 import { useContext, useRef } from "react";
-import { PlayerContext } from "../../../Contexts/PlayerContext";
+import { PlayerContext } from "./../../../../Contexts/PlayerContext";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faRotateRight } from "@fortawesome/free-solid-svg-icons";
 import styles from "./ResetButton.module.css";

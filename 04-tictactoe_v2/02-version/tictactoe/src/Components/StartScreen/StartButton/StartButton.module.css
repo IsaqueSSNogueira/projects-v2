@@ -1,0 +1,24 @@
+
+
+.startButton {
+    width: 50%;
+    border:none;
+    padding: 10px;
+    border-radius:30px;
+    background-image: linear-gradient(to top, rgb(125, 162, 72) 0%,  rgb(148, 191, 88) 20%, rgb(185, 244, 102) 90%, rgb(220, 249, 176));
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    font-size: 0.9rem;
+    font-weight: 700;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    transition: all 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:8px;
+    color:rgba(0,0,0,0.8);
+}
+
+.startButton:hover {
+    transform: scale(1.02);
+}

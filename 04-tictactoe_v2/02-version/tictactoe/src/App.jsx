@@ -1,25 +1,24 @@
 
+import GameScreen from "./Components/GameScreen/GameScreen";
 import { useContext } from "react";
-import { PlayerContext } from "./Contexts/PlayerContext.jsx";
+import { PlayerContext } from "./Contexts/PlayerContext";
 import styles from "./App.module.css"
-import GameControls from "./Components/GameControls/GameControls.jsx";
-import GameResultModal from "./Components/GameResultModal/GameResultModal.jsx";
-import GameSection from "./Components/GameSection/GameSection.jsx";
-import Header from "./Components/Header/Header.jsx"
+import StartScreen from "./Components/StartScreen/StartScreen";
 
 
 
 const App = () => {
 
-  const {showGameResultModal} = useContext(PlayerContext)
+
+  const {currentScreen} = useContext(PlayerContext);
+
 
   return(
-    <main className={styles.main}>
-      <Header />
-      <GameSection />
-      <GameControls />
-      {showGameResultModal && <GameResultModal />}
-    </main>
+      <main className={styles.main}>
+        {currentScreen === "Start" && <StartScreen />}
+        {currentScreen === "Game" && <GameScreen />}
+        {/**/}
+      </main>
   )
 }
 

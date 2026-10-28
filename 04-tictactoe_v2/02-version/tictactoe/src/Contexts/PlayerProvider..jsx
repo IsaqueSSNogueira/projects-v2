@@ -6,6 +6,10 @@ import { PlayerContext } from "./PlayerContext"
 
 export const PlayerProvider = ({ children }) => {
 
+
+    const [currentScreen, setCurrentScreen] = useState("Start")
+
+
     /*wins for players*/
     const [winsX, setWinsX] = useState(0)
     const [winsO, setWinsO] = useState(0)
@@ -128,7 +132,7 @@ export const PlayerProvider = ({ children }) => {
 
     
     return (
-        <PlayerContext.Provider value={{ currentPlayer, togglePlayer, addPlayerMove, resetKey, resetGame, winsX, winsO, showGameResultModal, showWinner, winner }}>
+        <PlayerContext.Provider value={{ currentPlayer, togglePlayer, addPlayerMove, resetKey, resetGame, winsX, winsO, showGameResultModal, showWinner, winner, currentScreen, setCurrentScreen }}>
             {children}
         </PlayerContext.Provider>
     )
