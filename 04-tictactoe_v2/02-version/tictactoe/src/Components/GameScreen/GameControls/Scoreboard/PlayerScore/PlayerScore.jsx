@@ -9,11 +9,12 @@ const PlayerScore = ({ player, wins}) => {
 
 
     return(
-        <div className={playerStyle}>
-            <div className={styles.simbolPlayer}>
+        <div className={playerStyle} aria-live="polite">
+            <span className={styles.forScreenReaders}>{`Jogador ${player}: ${wins} vitórias`}</span>
+            <div className={styles.simbolPlayer} arial-hidden="true">
                {player}
             </div>
-            <div className={styles.playerInfo}>
+            <div className={styles.playerInfo} aria-hidden="true">
                 <p className={styles.playerLabel}>Jogador <span className={styles.playerName}>{player}</span></p>
                 <span className={styles.score}>{wins}</span>
             </div>

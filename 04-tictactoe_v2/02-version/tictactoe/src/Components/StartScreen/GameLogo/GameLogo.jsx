@@ -6,7 +6,7 @@ const GameLogo = () => {
 
 
     return (
-        <div className={styles.gameLogoContainer}>
+        <div className={styles.gameLogoContainer} aria-hidden="true">
             <div className={`${styles.cell} ${styles.playerX}`}>X</div>
             <div className={`${styles.cell} ${styles.playerO}`}>O</div>
             <div className={`${styles.cell} ${styles.playerO}`}>O</div>

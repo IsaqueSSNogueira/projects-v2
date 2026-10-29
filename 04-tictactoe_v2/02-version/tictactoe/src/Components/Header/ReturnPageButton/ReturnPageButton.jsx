@@ -7,8 +7,8 @@ import { Link } from "react-router";
 const ReturnPageButton = ({ to }) => {
 
     return(
-        <Link to={to} className={styles.link}>
-                <FontAwesomeIcon icon={faArrowLeft} className={styles.returnIcon} />
+        <Link to={to} className={styles.link} aria-label="Return to the previous screen">
+                <FontAwesomeIcon icon={faArrowLeft} className={styles.returnIcon} aria-hidden="true" />
         </Link>
     )
 }

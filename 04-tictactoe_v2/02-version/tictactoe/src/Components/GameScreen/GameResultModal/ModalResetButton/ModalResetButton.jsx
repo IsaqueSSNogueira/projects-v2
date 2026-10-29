@@ -18,8 +18,8 @@ const ModalResetButton = () => {
     }
 
     return (
-        <button className={styles.resetButton} onClick={() => clickResetButton()}>
-            <FontAwesomeIcon icon={faXmark} className={styles.closeSymbol}/>
+        <button className={styles.resetButton} onClick={clickResetButton}>
+            <FontAwesomeIcon icon={faXmark} className={styles.closeSymbol} aria-hidden="true" />
             Fechar
         </button>
     )

@@ -7,7 +7,7 @@ import { faStar } from "@fortawesome/free-solid-svg-icons";
 const SymbolContainer = () => {
 
     return(
-        <div className={styles.symbolContainer}>
+        <div className={styles.symbolContainer} aria-hidden="true">
             <FontAwesomeIcon icon={faTrophy} className={styles.trophySymbol} />
             <FontAwesomeIcon icon={faStar} className={styles.starSymbol} />
         </div>

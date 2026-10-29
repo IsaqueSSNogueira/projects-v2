@@ -5,7 +5,7 @@ const FooterText = () => {
 
 
     return (
-        <p className={styles.footerText}>Jogue, Divirta-se, Repita</p>
+        <footer className={styles.footerText}>Jogue, Divirta-se, Repita</footer>
     )
 }
 

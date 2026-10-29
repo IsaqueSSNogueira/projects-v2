@@ -13,7 +13,7 @@ const Header = ({ isStartScreen, to }) => {
             {!isStartScreen && <ReturnPageButton to={to} />}
 
             <h1 className={styles.h1}>
-                <span className={styles.h1Hash}># </span>
+                <span className={styles.h1Hash} aria-hidden="true"># </span>
                 Tic Tac 
                 <span className={styles.h1Highlight}> Toe</span>
             </h1>

@@ -13,7 +13,10 @@ const Cell = ({ index }) => {
 
     /*status & style*/
     const [cellStatus, setCellStatus] = useState("")
-    const [cellStyle, setCellStyle] = useState("")
+    const cellPosition = {
+        row: Math.floor(index / 3) + 1,
+        column: (index % 3) + 1,
+    }
 
     /*
     const sound = useRef(null)
@@ -36,29 +39,22 @@ const Cell = ({ index }) => {
     }, [resetKey])
 
     /*status "X", "O", ""*/
-    useEffect(() => {
-        switch(cellStatus){
-            case "X":
-            setCellStyle(styles.playerX)
-            break;
-            case "O":
-            setCellStyle(styles.playerO)
-            break;
-            default:
-            setCellStyle("")
-        }
-    }, [cellStatus])
+    const cellStyle = {
+        X: styles.playerX,
+        O: styles.playerO,
+    }[cellStatus] ?? "";
 
     const handleClick = () => {
         if(cellStatus !== "") return
         /*playSound()*/
         setCellStatus(currentPlayer)
         addPlayerMove(index)
+        console.log(`Linha ${cellPosition.row}, Coluna ${cellPosition.column}`)
     }
 
     return (
         <div className={styles.cellArea} data-index={index}>
-                <button data-index={index} className={`${styles.cellButton} ${cellStyle}`} onClick={handleClick}>
+                <button data-index={index} className={`${styles.cellButton} ${cellStyle}`} onClick={handleClick} aria-label={`Linha ${cellPosition.row}, coluna ${cellPosition.column}, ${cellStatus || "vazia"}`}>
                     {cellStatus}
                 </button>
         </div>

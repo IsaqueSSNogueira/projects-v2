@@ -9,7 +9,7 @@ const MatchSetupInfo = () => {
     return(
         <div className={styles.matchSetupInfo}>
             <h3 className={styles.title}>
-                <FontAwesomeIcon icon={faTableCellsLarge} />
+                <FontAwesomeIcon icon={faTableCellsLarge} aria-hidden="true" />
                 Escolha um modo de jogo
             </h3>
             <h4 className={styles.subtitle}>Defina quantas partidas quer jogar e boa sorte!</h4>

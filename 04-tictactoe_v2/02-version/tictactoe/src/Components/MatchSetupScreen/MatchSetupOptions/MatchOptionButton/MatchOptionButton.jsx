@@ -56,14 +56,14 @@ const MatchOptionButton = ({ type }) => {
     return(
         <Link to="/game" className={`${styles.matchOptionButton} ${styleButton}`} onClick={onClick}>
             <div className={styles.buttonIconContainer}>
-                <FontAwesomeIcon icon={icon} className={styles.buttonIcon} />
+                <FontAwesomeIcon icon={icon} className={styles.buttonIcon} aria-hidden="true" />
             </div>
 
             <div className={styles.optionInfo}>
                 <h4 className={styles.optionTitle}>{title}</h4>
                 <p className={styles.optionSubtitle}>{subtitle}</p>
             </div>
-            <FontAwesomeIcon icon={faAngleRight} className={styles.arrowIcon} />
+            <FontAwesomeIcon icon={faAngleRight} className={styles.arrowIcon} aria-hidden="true" />
         </Link>
 
     )

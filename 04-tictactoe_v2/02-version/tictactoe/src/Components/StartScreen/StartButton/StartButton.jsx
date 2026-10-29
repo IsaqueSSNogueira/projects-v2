@@ -13,8 +13,7 @@ const StartButton = () => {
 
     return (
             <Link to="/matchSetup" className={styles.startButton} onClick={() => playSoundFunction("")}>
-
-                <FontAwesomeIcon icon={faPlay} className={styles.playIcon} />
+                <FontAwesomeIcon icon={faPlay} className={styles.playIcon} aria-hidden="true" />
                 Iniciar
             </Link>
     )

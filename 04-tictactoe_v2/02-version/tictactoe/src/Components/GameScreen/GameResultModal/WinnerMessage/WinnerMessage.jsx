@@ -43,7 +43,7 @@ const WinnerMessage = () => {
 
 
     return(
-        <div className={styles.winnerMessageContainer}>
+        <div className={styles.winnerMessageContainer} aria-live="polite">
             <h3 className={styles.titleWin}>
                 {titleMensage}
                 <span className={styles.winHighlight}>{hasWinner ? "venceu!" : ""}</span>
