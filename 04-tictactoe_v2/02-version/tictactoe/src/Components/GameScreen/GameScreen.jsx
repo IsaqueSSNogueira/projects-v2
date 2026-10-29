@@ -1,6 +1,6 @@
 
 import { useContext } from "react";
-import { PlayerContext } from "./../../Contexts/PlayerContext.jsx"
+import { MatchContext } from "../../Contexts/MatchContext/MatchContext.jsx";
 import GameControls from "./GameControls/GameControls.jsx";
 import GameResultModal from "./GameResultModal/GameResultModal.jsx";
 import GameSection from "./GameSection/GameSection.jsx";
@@ -9,7 +9,7 @@ import styles from "./GameScreen.module.css";
 
 const GameScreen = () => {
 
-    const {showGameResultModal} = useContext(PlayerContext);
+    const {showGameResultModal} = useContext(MatchContext);
 
     return(
         <div className={styles.GameScreen}>

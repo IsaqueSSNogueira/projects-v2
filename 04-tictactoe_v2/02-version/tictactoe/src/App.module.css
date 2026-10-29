@@ -11,4 +11,5 @@
     flex-direction: column;
     gap:10px;
     /*rgb(168, 247, 189);*/
+    transform: scale(1.1);
 }

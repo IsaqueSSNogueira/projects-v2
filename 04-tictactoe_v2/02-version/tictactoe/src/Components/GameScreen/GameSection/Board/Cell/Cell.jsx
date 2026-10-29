@@ -1,14 +1,14 @@
 
 import { useContext, useEffect, useRef, useState } from "react";
-import { PlayerContext } from "./../../../../../Contexts/PlayerContext";
 import cliskSound from "./../../../../../assets/audio/clickButton/amaze98-clicking-interface-select-201946.mp3"
 import styles from "./Cell.module.css";
+import { MatchContext } from "../../../../../Contexts/MatchContext/MatchContext";
 
 
 
 const Cell = ({ index }) => {
 
-    const { currentPlayer, addPlayerMove, resetKey } = useContext(PlayerContext)
+    const { currentPlayer, addPlayerMove, resetKey } = useContext(MatchContext)
 
 
     /*status & style*/

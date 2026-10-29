@@ -1,12 +1,14 @@
 
 import { useContext, useEffect, useRef, useState } from "react";
-import { PlayerContext } from "./../../../../Contexts/PlayerContext";
+import { AudioContext } from "../../../../Contexts/AudioContext/AudioContext";
 import styles from "./WinnerMessage.module.css";
+import { MatchContext } from "../../../../Contexts/MatchContext/MatchContext";
 
 
 const WinnerMessage = () => {
 
-    const {winner, playSoundFunction} = useContext(PlayerContext)
+    const {winner} = useContext(MatchContext)
+    const {playSoundFunction} = useContext(AudioContext)
 
     const [titleMensage, setTitleMensage] = useState("")
     const [hasWinner, setHasWinner] = useState(false)

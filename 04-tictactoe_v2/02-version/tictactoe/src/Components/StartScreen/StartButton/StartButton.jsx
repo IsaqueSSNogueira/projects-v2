@@ -3,12 +3,12 @@ import styles from "./StartButton.module.css"
 import { faPlay } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useContext } from "react";
-import { PlayerContext } from "../../../Contexts/PlayerContext";
+import { AudioContext } from "../../../Contexts/AudioContext/AudioContext";
 import { Link } from "react-router";
 
 const StartButton = () => {
 
-    const {playSoundFunction} = useContext(PlayerContext);
+    const {playSoundFunction} = useContext(AudioContext);
 
 
     return (

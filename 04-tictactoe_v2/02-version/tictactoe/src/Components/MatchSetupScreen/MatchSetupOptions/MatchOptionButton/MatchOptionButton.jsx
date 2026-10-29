@@ -6,14 +6,16 @@ import { faTrophy } from "@fortawesome/free-solid-svg-icons";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import { useContext, useEffect, useState } from "react";
 import { Link } from "react-router";
-import { PlayerContext } from "../../../../Contexts/PlayerContext";
+import { MatchContext } from "../../../../Contexts/MatchContext/MatchContext";
+import { AudioContext } from "../../../../Contexts/AudioContext/AudioContext";
 import styles from "./MatchOptionButton.module.css";
 
 
 
 const MatchOptionButton = ({ type }) => {
 
-    const {playSoundFunction, selectMatchCount} = useContext(PlayerContext);
+    const {selectMatchCount} = useContext(MatchContext);
+    const {playSoundFunction} = useContext(AudioContext)
 
 
 

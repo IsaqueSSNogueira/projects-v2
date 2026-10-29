@@ -2,13 +2,13 @@
 
 import { useContext, useEffect, useState } from "react";
 import styles from "./MatchProgress.module.css";
-import { PlayerContext } from "../../../../Contexts/PlayerContext";
+import { MatchContext } from "../../../../Contexts/MatchContext/MatchContext";
 
 
 const MatchProgress = () => {
 
 
-    const {currentMatch, totalMatches} = useContext(PlayerContext)
+    const {currentMatch, totalMatches} = useContext(MatchContext)
     const [matchProgressText, setMatchProgressText] = useState("")
 
     useEffect(() => {

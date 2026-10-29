@@ -1,12 +1,12 @@
 
 import { useContext } from "react";
 import styles from "./GameStatus.module.css"
-import { PlayerContext } from "../../../../Contexts/PlayerContext";
+import { MatchContext } from "../../../../Contexts/MatchContext/MatchContext";
 
 
 const GameStatus = () => {
 
-    const {currentPlayer} = useContext(PlayerContext)
+    const {currentPlayer} = useContext(MatchContext)
 
     return (
         <div className={styles.gameStatus}>

@@ -2,12 +2,12 @@
 import PlayerScore from "./PlayerScore/PlayerScore";
 import styles from "./Scoreboard.module.css";
 import { useContext } from "react";
-import { PlayerContext } from "./../../../../Contexts/PlayerContext";
+import { MatchContext } from "../../../../Contexts/MatchContext/MatchContext";
 
 
 const Scoreboard = () => {
 
-    const {winsX, winsO} = useContext(PlayerContext)
+    const {winsX, winsO} = useContext(MatchContext)
 
 
     return(

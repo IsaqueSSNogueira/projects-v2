@@ -9,7 +9,7 @@
     height: 60px;
     border-radius: 20px;
     -webkit-tap-highlight-color: transparent;
-    transition: 0.5s all;
+    transition: transform 0.5s ;
 }
 
 .matchOptionButton:hover {
@@ -21,7 +21,7 @@
 .singleMatch {
     background-image: linear-gradient(to top, rgb(138, 196, 57) 0%,  rgb(137, 197, 52) 20%, rgb(185, 244, 102) 90%, rgb(220, 249, 176));
     border:1.5px solid rgba(255,255,255, 0.7);
-    box-shadow: 0px 0px 10px rgb(176, 229, 103);
+    box-shadow: 0px 0px 10px rgba(176, 229, 103, 0.8);
 }
 
 .bestOfThree {
@@ -33,7 +33,7 @@
 .bestOfTen {
     background-image: linear-gradient(to top, rgb(17, 66, 44) 0%,  rgb(18, 77, 50) 20%, rgb(29, 109, 64) 90%, rgb(66, 114, 31));
     color:rgba(255,255,255,0.8);
-    border:1.5px solid rgb(175, 215, 119);
+    border:1.5px solid rgb(119, 147, 80);
     outline:1px solid rgb(17, 66, 44);
     box-shadow: 0px 0px 10px rgba(198, 244, 134, 0.8);
 }

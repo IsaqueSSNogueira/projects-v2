@@ -1,12 +1,12 @@
 
 import { useContext, useRef } from "react";
-import { PlayerContext } from "./../../../../Contexts/PlayerContext";
+import { MatchContext } from "../../../../Contexts/MatchContext/MatchContext";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faRotateRight } from "@fortawesome/free-solid-svg-icons";
 import styles from "./ResetButton.module.css";
 const ResetButton = () => {
 
-    const { resetGame } = useContext(PlayerContext);
+    const { resetGame } = useContext(MatchContext);
 
     return (
         <button className={styles.resetButton} onClick={resetGame}>
