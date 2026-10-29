@@ -4,13 +4,13 @@ import ReturnPageButton from "./ReturnPageButton/ReturnPageButton";
 
 
 
-const Header = ({ isStartScreen }) => {
+const Header = ({ isStartScreen, to }) => {
 
 
     return (
         <header className={styles.header}>
 
-            {!isStartScreen && <ReturnPageButton />}
+            {!isStartScreen && <ReturnPageButton to={to} />}
 
             <h1 className={styles.h1}>
                 <span className={styles.h1Hash}># </span>

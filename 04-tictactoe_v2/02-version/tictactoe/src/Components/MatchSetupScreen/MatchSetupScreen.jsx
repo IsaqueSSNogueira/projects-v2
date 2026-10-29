@@ -11,7 +11,7 @@ const MatchSetupScreen = () => {
 
     return (
         <div className={styles.matchSetupScreen}>
-            <Header />
+            <Header to={"/"} />
             <MatchSetupOptions />
             <div className={styles.footerText}>
                 <FooterText />

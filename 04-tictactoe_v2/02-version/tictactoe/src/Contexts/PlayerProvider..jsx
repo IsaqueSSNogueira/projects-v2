@@ -41,8 +41,35 @@ export const PlayerProvider = ({ children }) => {
     const [playerOMoves, setPlayerOMoves] = useState([])
     const [clickedCells, setClickedCells] = useState([])
 
-    const soundRef = useRef(null)
+    /*matchs*/
+    const [totalMatches, setTotalMatches] = useState(1)
+    const [currentMatch, setCurrentMatch] = useState(0);
 
+    const selectMatchCount = (amount) => {
+        setTotalMatches(amount)
+    }
+
+    const completeMatch = () => {
+        setCurrentMatch(prev => prev + 1)
+        resetGame()
+    }
+
+    useEffect(() => {
+        if(currentMatch === totalMatches){
+            if(winsO > winsX) setWinner("O")
+            else if(winsX > winsO) setWinner("X")
+            else if(winsX === winsO) setWinner("Empate")
+            showWinner(true)
+            setCurrentMatch(0)
+            setWinsO(0)
+            setWinsX(0)
+        }
+
+    }, [currentMatch])
+        
+
+    /*sounds*/
+    const soundRef = useRef(null)
     const playSoundFunction = (type) => {
       
         if(!soundRef.current){
@@ -96,17 +123,14 @@ export const PlayerProvider = ({ children }) => {
 
         if(isXWinner){
             setWinsX(prev => prev + 1)
-            setWinner("X")
-            showWinner(true)
+            completeMatch()
         }
         else if(isOWinner){
             setWinsO(prev => prev + 1)
-            setWinner("O")
-            showWinner(true)
+            completeMatch()
         }
         else if(clickedCells.length >= 9){
-            setWinner("Empate")
-            showWinner(true)
+            completeMatch()
         }
         else{
             return;
@@ -153,7 +177,7 @@ export const PlayerProvider = ({ children }) => {
 
     
     return (
-        <PlayerContext.Provider value={{ currentPlayer, togglePlayer, addPlayerMove, resetKey, resetGame, winsX, winsO, showGameResultModal, showWinner, winner, playSoundFunction }}>
+        <PlayerContext.Provider value={{ currentPlayer, togglePlayer, addPlayerMove, resetKey, resetGame, winsX, winsO, showGameResultModal, showWinner, winner, playSoundFunction, selectMatchCount, currentMatch, totalMatches }}>
             {children}
         </PlayerContext.Provider>
     )

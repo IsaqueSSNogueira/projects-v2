@@ -1,15 +1,13 @@
 
-
-
+/* button (main container) */
 .matchOptionButton {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    padding: 0 15px;
     width: 90%;
     height: 60px;
     border-radius: 20px;
-    box-shadow: 0 0 5px rgba(0,0,0,0.3);
     -webkit-tap-highlight-color: transparent;
     transition: 0.5s all;
 }
@@ -18,30 +16,52 @@
     transform: scale(1.05);
 }
 
+/* custom button */
 
 .singleMatch {
-    background-image: linear-gradient(to top, rgb(125, 162, 72) 0%,  rgb(148, 191, 88) 20%, rgb(185, 244, 102) 90%, rgb(220, 249, 176));
+    background-image: linear-gradient(to top, rgb(138, 196, 57) 0%,  rgb(137, 197, 52) 20%, rgb(185, 244, 102) 90%, rgb(220, 249, 176));
+    border:1.5px solid rgba(255,255,255, 0.7);
+    box-shadow: 0px 0px 10px rgb(176, 229, 103);
 }
 
 .bestOfThree {
+    background-image: linear-gradient(to top, rgb(250, 239, 218) 0%,  rgb(246, 238, 223) 20%, transparent);
+    border:1.5px solid rgba(255,255,255, 0.5);
+    box-shadow: 0px 0px 10px rgb(217, 204, 181);
 }
 
 .bestOfTen {
     background-image: linear-gradient(to top, rgb(17, 66, 44) 0%,  rgb(18, 77, 50) 20%, rgb(29, 109, 64) 90%, rgb(66, 114, 31));
     color:rgba(255,255,255,0.8);
+    border:1.5px solid rgb(175, 215, 119);
+    outline:1px solid rgb(17, 66, 44);
+    box-shadow: 0px 0px 10px rgba(198, 244, 134, 0.8);
 }
 
-.bestOfTen .optionSubtitle {
-    color:rgba(255,255,255,0.8);
-}
 
+
+/* Option Info (container title, subtitle) */
 
 .optionInfo {
     width: 70%;
     display: flex;
     flex-direction: column;
     align-items: start;
-    gap:5px;
+    gap:2px;
+    padding-left: 10px;
+    margin-left: 10px;
+    position: relative;
+}
+
+.optionInfo::before {
+    content:'';
+    width: 1px;
+    height: 60%;
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    top:50%;
+    left:0;
+    transform: translateY(-50%);
 }
 
 
@@ -52,11 +72,29 @@
 
 .optionSubtitle {
     font-size: 0.7rem;
-    color:rgba(0,0,0,0.5);
-    font-weight: 500;
+    color:rgba(0,0,0,0.8);
+}
+
+.bestOfTen .optionSubtitle {
+    color:rgba(255,255,255,0.8);
+}
+
+/*icons*/
+
+.buttonIconContainer {
+    width: 42px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
 }
 
 .arrowIcon, .buttonIcon {
     width: 20px;
     height: 20px;
+}
+
+.bestOfTen .arrowIcon, .bestOfTen .buttonIcon {
+    color:rgba(212, 255, 152, 0.9);
 }

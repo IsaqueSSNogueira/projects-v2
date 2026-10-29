@@ -1,0 +1,22 @@
+
+.matchSetupInfo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:5px;
+}
+
+.title {
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap:5px;
+}
+
+.subtitle {
+    width: 50%;
+    font-size: 0.6rem;
+    text-align: center;
+    color: rgba(0,0,0,0.5);
+}

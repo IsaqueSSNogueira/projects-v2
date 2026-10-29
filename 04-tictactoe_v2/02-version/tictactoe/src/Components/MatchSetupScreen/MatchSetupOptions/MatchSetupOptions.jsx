@@ -1,16 +1,18 @@
 
 import MatchOptionButton from "./MatchOptionButton/MatchOptionButton";
+import MatchSetupInfo from "./MatchSetupInfo/MatchSetupInfo";
 import styles from "./MatchSetupOptions.module.css";
+
 
 const MatchSetupOptions = () => {
 
 
     return(
         <div className={styles.matchSetupOptions}>
-            <h3>Escolha um modo</h3>
+            <MatchSetupInfo />
             <MatchOptionButton type={1} />
-            <MatchOptionButton type={2} />
             <MatchOptionButton type={3} />
+            <MatchOptionButton type={10} />
         </div>
     )
 }

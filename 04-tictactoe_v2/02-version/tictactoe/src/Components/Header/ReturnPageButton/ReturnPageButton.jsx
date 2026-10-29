@@ -4,10 +4,10 @@ import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router";
 
-const ReturnPageButton = () => {
+const ReturnPageButton = ({ to }) => {
 
     return(
-        <Link to="/" className={styles.link}>
+        <Link to={to} className={styles.link}>
                 <FontAwesomeIcon icon={faArrowLeft} className={styles.returnIcon} />
         </Link>
     )
